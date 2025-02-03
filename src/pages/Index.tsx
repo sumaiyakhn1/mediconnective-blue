@@ -1,37 +1,11 @@
 import { Calendar, MapPin, Users } from "lucide-react";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 
 const Index = () => {
-  const carouselImages = [
-    {
-      url: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-      alt: "Conference collaboration",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
-      alt: "Medical presentation",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
-      alt: "Technology in medicine",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-      alt: "Modern medical technology",
-    },
-  ];
-
   return (
     <div className="animate-fade-in">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-primary to-primary-dark text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="bg-gradient-to-r from-primary to-primary-dark text-white py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
               Medical Conference 2024
@@ -39,7 +13,7 @@ const Index = () => {
             <p className="text-xl md:text-2xl mb-8">
               Advancing Healthcare Through Innovation
             </p>
-            <div className="flex flex-col md:flex-row justify-center items-center gap-6 text-lg mb-8">
+            <div className="flex flex-col md:flex-row justify-center items-center gap-6 text-lg">
               <div className="flex items-center gap-2">
                 <Calendar className="w-6 h-6" />
                 <span>June 15-17, 2024</span>
@@ -52,29 +26,6 @@ const Index = () => {
                 <Users className="w-6 h-6" />
                 <span>500+ Attendees</span>
               </div>
-            </div>
-            
-            {/* Carousel Section */}
-            <div className="max-w-4xl mx-auto">
-              <Carousel className="w-full">
-                <CarouselContent>
-                  {carouselImages.map((image, index) => (
-                    <CarouselItem key={index}>
-                      <div className="p-1">
-                        <div className="relative aspect-video overflow-hidden rounded-xl">
-                          <img
-                            src={image.url}
-                            alt={image.alt}
-                            className="object-cover w-full h-full"
-                          />
-                        </div>
-                      </div>
-                    </CarouselItem>
-                  ))}
-                </CarouselContent>
-                <CarouselPrevious className="left-2" />
-                <CarouselNext className="right-2" />
-              </Carousel>
             </div>
           </div>
         </div>
