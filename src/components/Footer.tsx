@@ -43,18 +43,19 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
+            <h3 className="text-xl font-semibold mb-4">Patners</h3>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-primary-light">
-                Twitter
-              </a>
-              <a href="#" className="hover:text-primary-light">
-                LinkedIn
-              </a>
-              <a href="#" className="hover:text-primary-light">
-                Facebook
-              </a>
-            </div>
+  <a href="https://partner1.com" target="_blank" rel="noopener noreferrer">
+    <img src="/path-to-logo1.png" alt="Partner 1" className="h-10 w-auto" />
+  </a>
+  <a href="https://partner2.com" target="_blank" rel="noopener noreferrer">
+    <img src="/path-to-logo2.png" alt="Partner 2" className="h-10 w-auto" />
+  </a>
+  <a href="https://partner3.com" target="_blank" rel="noopener noreferrer">
+    <img src="/path-to-logo3.png" alt="Partner 3" className="h-10 w-auto" />
+  </a>
+</div>
+
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-primary-light/30 text-center">
