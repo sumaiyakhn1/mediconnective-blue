@@ -92,9 +92,93 @@ const Index = () => {
         </div>
       </div>
 
-      {/* Main Content */}
-      // ... keep existing code (grid sections with about, highlights, and registration)
-    </div>
+
+      <div className="flex justify-center bg-gray-100 min-h-screen px-4">
+      <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200 max-w-6xl w-full">    
+  <h2 className="text-xl font-semibold text-blue-600 mb-4">Message from the Doctor</h2>
+
+  <p className="text-gray-700">
+   
+    <span className="font-semibold"> Dear Pharma Associates,</span> 
+    
+  </p>
+  
+  <p className="text-gray-700">
+    With immense pleasure, we would like to invite you for the Conference – 
+    <span className="font-semibold"> “KUMAON CANCER CONCLAVE 2025” </span> 
+    (Cutting Edge to Real World) to be held on 
+    <span className="font-semibold"> Saturday, 8th March 2025 </span> 
+    at Hotel Manu Maharani, Ramnagar Nainital.
+  </p>
+
+  <p className="text-gray-700 mt-2">
+    This Conference is designed for Medical, Radiation, Surgical Oncologists, Hematologists, 
+    and other healthcare professionals. We are expecting around 100+ participants across India. 
+    This meeting will be a great learning opportunity for students, researchers, and academicians.
+  </p>
+
+  <p className="text-gray-700 mt-2">
+    The Conference will be organized under the aegis of 
+    <span className="font-semibold"> "ONCO IMAGING AND THERAPEUTICS INDIA". </span>
+  </p>
+
+  <p className="text-gray-600 italic mt-2">
+    This is a multi-company sponsorship event.
+  </p>
+
+  <p className="text-gray-700 mt-2">
+    We look forward to your earnest support to successfully drive this scientific conference. 
+    Feel free to speak or write to us for any further information.
+  </p>
+
+  <p className="text-gray-700 mt-2">
+    We have engaged <span className="font-semibold">AMD GLOBAL NET PVT. LTD</span> 
+    as an Event Coordinator to drive the said event.
+  </p>
+
+  <p className="text-gray-700 mt-2">
+    You are requested to kindly make payment as below.
+  </p>
+
+  <div className="bg-gray-100 p-4 rounded-md mt-4">
+    <p className="text-gray-900 font-medium">
+      <span className="font-semibold">Account Name:</span> AMD GLOBAL NET PVT.LTD
+    </p>
+    <p className="text-gray-900">
+      <span className="font-semibold">Account number:</span> 2302245650904817
+    </p>
+    <p className="text-gray-900">
+      <span className="font-semibold">Bank:</span> AU Small Finance Bank
+    </p>
+    <p className="text-gray-900">
+      <span className="font-semibold">Branch:</span> Lajpat Nagar
+    </p>
+    <p className="text-gray-900">
+      <span className="font-semibold">IFSC Code:</span> AUBL0002456
+    </p>
+    <p className="text-gray-900">
+      <span className="font-semibold">PAN Card:</span> AARCA6822A
+    </p>
+    <p className="text-gray-900">
+      <span className="font-semibold">GSTIN:</span> 07AARCA6822AZS
+    </p>
+  </div>
+
+  <p className="text-gray-700 mt-4">Thank You!</p>
+  <p className="text-gray-700">Warm Regards,</p>
+
+  <div className="mt-2">
+    <p className="text-gray-900 font-medium">Dr. Shalabh Arora</p>
+    <p className="text-gray-700">Program - Convener</p>
+    <p className="text-gray-700">Cancer Specialist</p>
+    <p className="text-gray-700">Ujala Cygnus Central Hospital</p>
+    <p className="text-gray-700">Haldwani, Uttarakhand - 262139</p>
+    <p className="text-gray-700">Ph. 7418385321</p>
+  </div>
+</div>
+</div>
+</div>
+
   );
 };
 
