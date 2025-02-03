@@ -4,16 +4,24 @@ const Index = () => {
   return (
     <div className="animate-fade-in">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-primary to-primary-dark text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div 
+        className="relative bg-cover bg-center min-h-[60vh] flex items-center"
+        style={{
+          backgroundImage: "url('https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=1470&fit=crop')",
+        }}
+      >
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/50"></div>
+        
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">
               Medical Conference 2024
             </h1>
-            <p className="text-xl md:text-2xl mb-8">
+            <p className="text-xl md:text-2xl mb-8 text-white">
               Advancing Healthcare Through Innovation
             </p>
-            <div className="flex flex-col md:flex-row justify-center items-center gap-6 text-lg">
+            <div className="flex flex-col md:flex-row justify-center items-center gap-6 text-lg text-white">
               <div className="flex items-center gap-2">
                 <Calendar className="w-6 h-6" />
                 <span>June 15-17, 2024</span>
