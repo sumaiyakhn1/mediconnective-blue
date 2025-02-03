@@ -10,15 +10,15 @@ import {
 const Index = () => {
   const images = [
     {
-      url: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=1470&fit=crop",
+      url: "/1200px-Panchachuli_peaks.jpg",
       alt: "Medical conference hall"
     },
     {
-      url: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1470&fit=crop",
+      url: "/Kumaon.jpg",
       alt: "Medical professionals collaborating"
     },
     {
-      url: "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?q=80&w=1491&fit=crop",
+      url: "/kumaon2.jpg",
       alt: "Modern medical technology"
     }
   ];
@@ -51,7 +51,7 @@ const Index = () => {
                   <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center">
                       <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">
-                        Medical Conference 2024
+                        Kumaon Cancer Conclave 2025
                       </h1>
                       <p className="text-xl md:text-2xl mb-8 text-white">
                         Advancing Healthcare Through Innovation
@@ -59,15 +59,15 @@ const Index = () => {
                       <div className="flex flex-col md:flex-row justify-center items-center gap-6 text-lg text-white">
                         <div className="flex items-center gap-2">
                           <Calendar className="w-6 h-6" />
-                          <span>June 15-17, 2024</span>
+                          <span>March 8, 2025</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <MapPin className="w-6 h-6" />
-                          <span>San Francisco, CA</span>
+                          <span> Ramnagar Nainital.</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <Users className="w-6 h-6" />
-                          <span>500+ Attendees</span>
+                          <span>100+ Attendees</span>
                         </div>
                       </div>
                     </div>
@@ -140,29 +140,7 @@ const Index = () => {
     You are requested to kindly make payment as below.
   </p>
 
-  <div className="bg-gray-100 p-4 rounded-md mt-4">
-    <p className="text-gray-900 font-medium">
-      <span className="font-semibold">Account Name:</span> AMD GLOBAL NET PVT.LTD
-    </p>
-    <p className="text-gray-900">
-      <span className="font-semibold">Account number:</span> 2302245650904817
-    </p>
-    <p className="text-gray-900">
-      <span className="font-semibold">Bank:</span> AU Small Finance Bank
-    </p>
-    <p className="text-gray-900">
-      <span className="font-semibold">Branch:</span> Lajpat Nagar
-    </p>
-    <p className="text-gray-900">
-      <span className="font-semibold">IFSC Code:</span> AUBL0002456
-    </p>
-    <p className="text-gray-900">
-      <span className="font-semibold">PAN Card:</span> AARCA6822A
-    </p>
-    <p className="text-gray-900">
-      <span className="font-semibold">GSTIN:</span> 07AARCA6822AZS
-    </p>
-  </div>
+ 
 
   <p className="text-gray-700 mt-4">Thank You!</p>
   <p className="text-gray-700">Warm Regards,</p>

@@ -22,8 +22,7 @@ const Navbar = () => {
           <div className="flex items-center">
           
   <Link to="/">
-    <img src="US_Logo-01-1.png" alt="MedConf 2024 Logo" className="h-12 w-auto" />
-  </Link>
+  <span className="text-lg font-semibold text-blue-900">Kumaon Cancer Conclave</span>  </Link>
 </div>
           
         
