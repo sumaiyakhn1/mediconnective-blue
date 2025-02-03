@@ -23,6 +23,14 @@ const Index = () => {
     }
   ];
 
+  const announcements = [
+    "Early bird registration now open! Save 20% until March 31st",
+    "50+ Expert Speakers Confirmed",
+    "New Workshop: Advanced Surgical Techniques",
+    "Special Panel on Healthcare Innovation",
+    "Networking Dinner on June 15th"
+  ];
+
   return (
     <div className="animate-fade-in">
       {/* Hero Section */}
@@ -71,6 +79,17 @@ const Index = () => {
           <CarouselPrevious className="left-4" />
           <CarouselNext className="right-4" />
         </Carousel>
+      </div>
+
+      {/* Marquee Section */}
+      <div className="bg-primary text-white py-3 overflow-hidden">
+        <div className="animate-marquee whitespace-nowrap inline-block">
+          {[...announcements, ...announcements].map((announcement, index) => (
+            <span key={index} className="mx-8">
+              {announcement} •
+            </span>
+          ))}
+        </div>
       </div>
 
       {/* Main Content */}
