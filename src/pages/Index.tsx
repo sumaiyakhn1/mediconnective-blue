@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Calendar, MapPin, Users } from "lucide-react";
 import {
@@ -36,7 +37,7 @@ const Index = () => {
   const plugin = React.useMemo(
     () =>
       Autoplay({
-        delay: 3000,
+        delay: 4000,
         stopOnInteraction: true,
         stopOnMouseEnter: true,
       }),
@@ -47,20 +48,12 @@ const Index = () => {
     <div className="animate-fade-in">
       {/* Hero Section */}
       <div className="relative min-h-[60vh] flex items-center">
-        <Carousel 
-          className="w-full" 
-          plugins={[plugin]}
-          opts={{
-            loop: true,
-            align: "start",
-            duration: 50,
-          }}
-        >
-          <CarouselContent className="transition-all duration-300">
+        <Carousel className="w-full" plugins={[plugin]}>
+          <CarouselContent>
             {images.map((image, index) => (
-              <CarouselItem key={index} className="transition-opacity duration-300">
+              <CarouselItem key={index}>
                 <div 
-                  className="relative bg-cover bg-center min-h-[60vh] flex items-center transition-transform duration-300 ease-in-out"
+                  className="relative bg-cover bg-center min-h-[60vh] flex items-center"
                   style={{
                     backgroundImage: `url('${image.url}')`,
                   }}
@@ -70,20 +63,20 @@ const Index = () => {
                   
                   <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center">
-                      <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white animate-fade-in">
+                      <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">
                         Kumaon Cancer Conclave 2025
                       </h1>
-                      <p className="text-xl md:text-2xl mb-8 text-white animate-fade-in">
+                      <p className="text-xl md:text-2xl mb-8 text-white">
                         Advancing Healthcare Through Innovation
                       </p>
-                      <div className="flex flex-col md:flex-row justify-center items-center gap-6 text-lg text-white animate-fade-in">
+                      <div className="flex flex-col md:flex-row justify-center items-center gap-6 text-lg text-white">
                         <div className="flex items-center gap-2">
                           <Calendar className="w-6 h-6" />
                           <span>March 8, 2025</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <MapPin className="w-6 h-6" />
-                          <span>Ramnagar Nainital.</span>
+                          <span> Ramnagar Nainital.</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <Users className="w-6 h-6" />
