@@ -30,7 +30,7 @@ const Index = () => {
     "Session 2: Lung Cancer",
     "Session 3: Gastrointestial Oncology",
     "Session 4: Gyne Oncology/Genitourinary",
-    "Session 5: Haematology",
+    "Session 5: Hematology",
   ];
 
   return (
