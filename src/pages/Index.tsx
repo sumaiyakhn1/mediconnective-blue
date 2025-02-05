@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Calendar, MapPin, Users } from "lucide-react";
 import {
@@ -37,7 +36,7 @@ const Index = () => {
   const plugin = React.useMemo(
     () =>
       Autoplay({
-        delay: 4000,
+        delay: 3000,
         stopOnInteraction: true,
         stopOnMouseEnter: true,
       }),
@@ -104,7 +103,6 @@ const Index = () => {
           ))}
         </div>
       </div>
-
 
       <div className="flex justify-center bg-gray-100 min-h-screen px-4">
       <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200 max-w-6xl w-full">    
@@ -179,7 +177,7 @@ const Index = () => {
 </div>
 </div>
 </div>
-
+    </div>
   );
 };
 
