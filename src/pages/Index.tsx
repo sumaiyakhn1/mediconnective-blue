@@ -1,3 +1,5 @@
+
+import React from "react";
 import { Calendar, MapPin, Users } from "lucide-react";
 import {
   Carousel,
