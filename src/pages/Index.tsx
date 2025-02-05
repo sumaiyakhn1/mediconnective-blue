@@ -6,6 +6,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const Index = () => {
   const images = [
@@ -23,8 +24,6 @@ const Index = () => {
     }
   ];
 
-
-
   const announcements = [
     "Session 1: Breast Cancer",
     "Session 2: Lung Cancer",
@@ -33,11 +32,21 @@ const Index = () => {
     "Session 5: Hematology",
   ];
 
+  const plugin = React.useMemo(
+    () =>
+      Autoplay({
+        delay: 4000,
+        stopOnInteraction: true,
+        stopOnMouseEnter: true,
+      }),
+    []
+  );
+
   return (
     <div className="animate-fade-in">
       {/* Hero Section */}
       <div className="relative min-h-[60vh] flex items-center">
-        <Carousel className="w-full">
+        <Carousel className="w-full" plugins={[plugin]}>
           <CarouselContent>
             {images.map((image, index) => (
               <CarouselItem key={index}>
