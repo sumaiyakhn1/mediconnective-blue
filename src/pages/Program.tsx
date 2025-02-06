@@ -32,7 +32,7 @@ const programSchedule = [
 
 const Program = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-b from-white to-secondary-light">
       <div className="text-center max-w-4xl mx-auto mb-16">
         <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-medium mb-6">
           Conference Program
@@ -43,21 +43,30 @@ const Program = () => {
         </p>
       </div>
 
-      <div className="rounded-lg border shadow-sm">
+      <div className="rounded-2xl border bg-white shadow-lg overflow-hidden">
         <Table>
           <TableHeader>
-            <TableRow>
-              <TableHead className="w-[200px]">Time</TableHead>
-              <TableHead className="min-w-[300px]">Topic</TableHead>
-              <TableHead>Speaker</TableHead>
+            <TableRow className="bg-primary/5 hover:bg-primary/5">
+              <TableHead className="w-[200px] text-primary font-semibold">Time</TableHead>
+              <TableHead className="min-w-[300px] text-primary font-semibold">Topic</TableHead>
+              <TableHead className="text-primary font-semibold">Speaker</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
             {programSchedule.map((session, index) => (
-              <TableRow key={index}>
-                <TableCell className="font-medium">{session.time}</TableCell>
-                <TableCell>{session.topic}</TableCell>
-                <TableCell>{session.speaker}</TableCell>
+              <TableRow 
+                key={index}
+                className="transition-colors hover:bg-secondary-light/50"
+              >
+                <TableCell className="font-medium text-primary-dark">
+                  {session.time}
+                </TableCell>
+                <TableCell className="font-medium">
+                  {session.topic}
+                </TableCell>
+                <TableCell className="text-secondary-dark">
+                  {session.speaker}
+                </TableCell>
               </TableRow>
             ))}
           </TableBody>
