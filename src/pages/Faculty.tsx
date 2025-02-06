@@ -85,8 +85,14 @@ const Faculty = () => {
       </div>
 
       {/* Faculty Grid */}
-      <div>
-        <h2 className="text-3xl font-bold text-primary mb-8">Faculty Members</h2>
+      <div className="text-center max-w-4xl mx-auto mb-16">
+        <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-medium mb-6">
+          Our Expert Team
+        </h2>
+        <p className="text-lg text-secondary mb-12 max-w-2xl mx-auto">
+          Meet our dedicated team of specialists who bring extensive experience and 
+          expertise in various oncological disciplines.
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {facultyMembers.map((faculty, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow">
