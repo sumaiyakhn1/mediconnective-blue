@@ -9,15 +9,6 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const Faculty = () => {
-  const chairman = {
-    name: "Dr. John Smith",
-    role: "Chairman",
-    photo: "/placeholder.svg",
-    credentials: "MD, PhD",
-    specialization: "Medical Oncology",
-    description: "Leading expert in oncology with over 20 years of experience in cancer research and treatment.",
-  };
-
   const facultyMembers = [
     {
       name: "Dr S.P Kataria",
@@ -65,24 +56,32 @@ const Faculty = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      {/* Chairman Section */}
-      <div className="mb-16">
-        <h2 className="text-3xl font-bold text-primary mb-8">Chairman</h2>
-        <Card className="bg-secondary-light">
-          <CardContent className="flex flex-col md:flex-row items-center gap-8 p-6">
-            <Avatar className="w-48 h-48">
-              <AvatarImage src={chairman.photo} alt={chairman.name} />
-              <AvatarFallback>{chairman.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
-            </Avatar>
-            <div className="text-center md:text-left">
-              <h3 className="text-2xl font-bold text-primary mb-2">{chairman.name}</h3>
-              <p className="text-xl text-primary-dark mb-2">{chairman.role}</p>
-              <p className="text-lg text-secondary mb-2">{chairman.credentials}</p>
-              <p className="text-lg text-secondary mb-4">{chairman.specialization}</p>
-              <p className="text-secondary">{chairman.description}</p>
+      {/* Modern Introduction Section */}
+      <div className="mb-16 bg-gradient-to-r from-primary-light via-white to-primary-light rounded-2xl p-8 shadow-xl">
+        <div className="max-w-3xl mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6 leading-tight">
+            Meet Our Distinguished Faculty
+          </h1>
+          <p className="text-lg md:text-xl text-secondary mb-8 leading-relaxed">
+            Our faculty comprises renowned experts in oncology, bringing together decades of experience 
+            in clinical practice, research, and patient care. Each member contributes unique expertise 
+            to provide comprehensive cancer care and education.
+          </p>
+          <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto mb-8">
+            <div className="text-center">
+              <h3 className="text-3xl font-bold text-primary-medium mb-2">20+</h3>
+              <p className="text-secondary">Years Average Experience</p>
             </div>
-          </CardContent>
-        </Card>
+            <div className="text-center">
+              <h3 className="text-3xl font-bold text-primary-medium mb-2">100+</h3>
+              <p className="text-secondary">Research Publications</p>
+            </div>
+            <div className="text-center">
+              <h3 className="text-3xl font-bold text-primary-medium mb-2">6</h3>
+              <p className="text-secondary">Specialized Departments</p>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Faculty Grid */}
