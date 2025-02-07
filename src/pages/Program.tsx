@@ -1,3 +1,4 @@
+
 import {
   Table,
   TableBody,
@@ -6,6 +7,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { BookOpen } from "lucide-react";
 
 const programSchedule = [
   {
@@ -123,6 +125,8 @@ const programSchedule = [
 ];
 
 const Program = () => {
+  const isSessionHeader = (topic: string) => topic.startsWith("Session");
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-b from-white to-secondary-light">
       <div className="text-center max-w-4xl mx-auto mb-16">
@@ -148,12 +152,23 @@ const Program = () => {
             {programSchedule.map((session, index) => (
               <TableRow 
                 key={index}
-                className="transition-colors hover:bg-secondary-light/50"
+                className={`transition-colors ${
+                  isSessionHeader(session.topic)
+                    ? "bg-gradient-to-r from-[#9b87f5]/10 to-transparent hover:from-[#9b87f5]/20"
+                    : "hover:bg-secondary-light/50"
+                }`}
               >
                 <TableCell className="font-medium text-primary-dark">
                   {session.time}
                 </TableCell>
-                <TableCell className="font-medium">
+                <TableCell className={`font-medium ${
+                  isSessionHeader(session.topic) 
+                    ? "text-[#8B5CF6] flex items-center gap-2" 
+                    : ""
+                }`}>
+                  {isSessionHeader(session.topic) && (
+                    <BookOpen className="h-5 w-5" />
+                  )}
                   {session.topic}
                 </TableCell>
                 <TableCell className="text-secondary-dark">
