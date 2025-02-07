@@ -9,25 +9,117 @@ import {
 
 const programSchedule = [
   {
-    time: "09:00 AM - 10:30 AM",
-    topic: "Opening Ceremony & Introduction to Modern Oncology",
-    speaker: "Dr. Sarah Johnson",
+    time: "08:30 AM - 09:00 AM",
+    topic: "Registration",
+    speaker: "",
   },
   {
-    time: "10:45 AM - 12:15 PM",
-    topic: "Latest Advances in Cancer Treatment",
-    speaker: "Dr. Michael Chen",
+    time: "09:00 AM - 11:00 AM",
+    topic: "Session 1: Breast Cancer",
+    speaker: "Dr. S.P Kataria / Dr. Vipul Nautiyal",
   },
   {
-    time: "02:00 PM - 03:30 PM",
-    topic: "Immunotherapy: The Future of Cancer Treatment",
-    speaker: "Dr. Emily Williams",
+    time: "09:00 PM - 09:30 PM",
+    topic: "Her2-low and ultra-low HR breast ",
+    speaker: "Dr. Abhishek Raj",
   },
   {
-    time: "03:45 PM - 05:15 PM",
-    topic: "Precision Medicine in Oncology",
-    speaker: "Dr. Robert Martinez",
+    time: "09:30 AM - 10:00 AM",
+    topic: "IO in early TNBC - whom and when to offer? (Keynote-552 vs A-Brave)",
+    speaker: "Dr. Mukesh Patekar",
   },
+  {
+    time: "10:00 AM - 11:00 AM",
+    topic: "Panel discussion - locally advancement breast cancer",
+    speaker: "Dr. Atul Batra, Dr. Viney Kumar(RO), Dr. Nalin Goyal(RO), Dr. Ritu Thakur,  Dr. Kapil Goyal(MO), Dr. Deepak Sundariyal(MO)",
+  },
+  {
+    time: "11:00 AM - 01:00 PM",
+    topic: "Session 2: Lung Cancer",
+    speaker: "Dr. Kaushal Kalra / Dr. Sweety Gupta",
+  },
+  {
+    time: "11:00 AM - 11:30 AM",
+    topic: "Current landscape of EGRFRm advanced NSCLC",
+    speaker: "Dr. Ankita Batra",
+  },
+  {
+    time: "11:30 AM - 12:00 PM",
+    topic: "Perioperative IO in NSCLC",
+    speaker: "Dr. Amit Sehrawat",
+  },
+
+  {
+    time: "12:00 PM - 01:00 PM",
+    topic: "Panel discussion - Stage III NSCLC",
+    speaker: "Dr. Prahbhat Malik, Dr Rachit Ahuja(RO), Dr. Jalal Gaur(RO), Dr. Rakesh Sharma(MO), Dr. Nitin S G(MO), Dr. Ritu Thakur(SO)",
+  },
+  {
+    time: "01:00 PM - 02:00 PM",
+    topic: "Lunch Break",
+    speaker: "",   
+  },
+  {
+    time: "02:00 PM - 04:00 PM",
+    topic: "Session 3: Gastrointestinal Oncology",
+    speaker: "Dr. Atul Sharma / Dr K C Pandey / Dr. Amit Gupta ",
+  },
+  {
+    time: "02:00 PM - 02:30 PM",
+    topic: "Implications of somatic panel testiong and IO in gastric cancer",
+    speaker: "Dr. Akash Jha",   
+  },
+  {
+    "time": "02:30 PM - 03:00 PM",
+    "topic": "Role of Radiation Oncology in HPB Cancers",
+    "speaker": "Dr. Mansi Barthwal",
+  },
+  {
+    "time": "03:00 PM - 04:00 PM",
+    "topic": "Panel Discussion – Locally Advanced Rectal Cancer",
+    "speaker": " Dr. Atul Sharma, Dr. Anita Malik (RO), Dr. Aman Chaudhary (MO), Dr. Lalit Mohan (RO), Dr. Kapil Goyal (MO), Dr. Chetan R (MO), Dr. Saurav Nandi (SO)",
+  },
+  {
+    "time": "04:00 PM - 05:00 PM",
+    "topic": "Session 4: Gyne Oncology / Genitourinary",
+    "speaker": "Dr. Sameer Verma / Dr. Deepa Joseph"
+  },
+  {
+    "time": "04:00 PM - 04:30 PM",
+    "topic": "Perioperative Management of Urothelial Cancer",
+    "speaker": "Dr. Deepak Sundariyal"
+  },
+  {
+    "time": "04:30 PM - 05:00 PM",
+    "topic": "Precision Therapeutics in Endometrial Cancer",
+    "speaker": "Dr. Raja Pramanik"
+  },
+  {
+    "time": "05:00 PM - 05:15 PM",
+    "topic": "Tea Break",
+    "speaker": ""
+  },
+  {
+    "time": "05:15 PM - 06:00 PM",
+    "topic": "Panel Discussion – Locally Advanced Carcinoma Cervix (Interlace Trial)",
+    "speaker": "Dr. Sachin Khurana, Dr. Nilanchali Singh (GO), Dr. Shashank Joshi (RO), Dr. Mansi Barthwal (RO), Dr. Kaushal Kalra (MO), Dr. Anshul Gupta (MO)"
+  },
+  {
+    "time": "06:00 PM - 07:30 PM",
+    "topic": "Session 5: Haematology",
+    "speaker": "Dr. Sameer Bakhshi / Dr. Ritu Rakholia"
+  },
+  {
+    "time": "06:30 PM - 07:30 PM",
+    "topic": "Panel Discussion – CML",
+    "speaker": "Dr. Ranjit Sahoo, Dr. Kaushal Kalra (MO), Dr. Sravan Dubasi (MO), Dr. Rohit Reddy (MO), Dr. Avriti Baveja (MO)"
+  },
+  {
+    "time": "07:30 PM",
+    "topic": "Closing Remarks Followed by Dinner",
+    "speaker": ""
+  }
+  
 ];
 
 const Program = () => {
