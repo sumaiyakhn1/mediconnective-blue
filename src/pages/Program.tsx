@@ -6,7 +6,10 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { BookOpen } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Download } from "lucide-react";
+import { useToast } from "@/components/ui/use-toast";
+import jsPDF from 'jspdf';
 
 const programSchedule = [
   {
@@ -124,7 +127,56 @@ const programSchedule = [
 ];
 
 const Program = () => {
+  const { toast } = useToast();
   const isSessionHeader = (topic: string) => topic.startsWith("Session");
+
+  const downloadPDF = () => {
+    const pdf = new jsPDF();
+    let yPosition = 20;
+    
+    // Add title
+    pdf.setFontSize(16);
+    pdf.text("Conference Program Schedule", 20, yPosition);
+    yPosition += 15;
+
+    // Set font size for content
+    pdf.setFontSize(10);
+
+    programSchedule.forEach((session) => {
+      // Check if we need to add a new page
+      if (yPosition > 270) {
+        pdf.addPage();
+        yPosition = 20;
+      }
+
+      // Add session details
+      if (isSessionHeader(session.topic)) {
+        pdf.setFont("helvetica", "bold");
+        yPosition += 5;
+      } else {
+        pdf.setFont("helvetica", "normal");
+      }
+
+      pdf.text(session.time, 20, yPosition);
+      pdf.text(session.topic, 70, yPosition);
+      
+      // Handle long speaker names by wrapping text
+      const speakerLines = pdf.splitTextToSize(session.speaker, 80);
+      speakerLines.forEach((line: string) => {
+        pdf.text(line, 130, yPosition);
+        yPosition += 5;
+      });
+
+      yPosition += 7;
+    });
+
+    pdf.save("conference-program.pdf");
+    toast({
+      title: "Success",
+      description: "Program schedule downloaded successfully!",
+      duration: 3000,
+    });
+  };
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-b from-white to-secondary-light">
@@ -132,10 +184,17 @@ const Program = () => {
         <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-medium mb-6">
           Conference Program
         </h1>
-        <p className="text-lg text-secondary mb-12">
+        <p className="text-lg text-secondary mb-8">
           Join us for an enlightening series of presentations and discussions led by
           renowned experts in the field of oncology.
         </p>
+        <Button
+          onClick={downloadPDF}
+          className="mb-8 bg-primary hover:bg-primary/90 text-white"
+        >
+          <Download className="mr-2 h-4 w-4" />
+          Download Schedule PDF
+        </Button>
       </div>
 
       <div className="rounded-2xl border bg-white shadow-lg overflow-hidden">
