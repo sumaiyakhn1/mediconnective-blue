@@ -9,7 +9,6 @@ import {
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
-import jsPDF from 'jspdf';
 
 const programSchedule = [
   {
@@ -131,46 +130,13 @@ const Program = () => {
   const isSessionHeader = (topic: string) => topic.startsWith("Session");
 
   const downloadPDF = () => {
-    const pdf = new jsPDF();
-    let yPosition = 20;
-    
-    // Add title
-    pdf.setFontSize(16);
-    pdf.text("Conference Program Schedule", 20, yPosition);
-    yPosition += 15;
+    const link = document.createElement('a');
+    link.href = '/conference-program.pdf';  // Path to your PDF in public folder
+    link.download = 'conference-program.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 
-    // Set font size for content
-    pdf.setFontSize(10);
-
-    programSchedule.forEach((session) => {
-      // Check if we need to add a new page
-      if (yPosition > 270) {
-        pdf.addPage();
-        yPosition = 20;
-      }
-
-      // Add session details
-      if (isSessionHeader(session.topic)) {
-        pdf.setFont("helvetica", "bold");
-        yPosition += 5;
-      } else {
-        pdf.setFont("helvetica", "normal");
-      }
-
-      pdf.text(session.time, 20, yPosition);
-      pdf.text(session.topic, 70, yPosition);
-      
-      // Handle long speaker names by wrapping text
-      const speakerLines = pdf.splitTextToSize(session.speaker, 80);
-      speakerLines.forEach((line: string) => {
-        pdf.text(line, 130, yPosition);
-        yPosition += 5;
-      });
-
-      yPosition += 7;
-    });
-
-    pdf.save("conference-program.pdf");
     toast({
       title: "Success",
       description: "Program schedule downloaded successfully!",
