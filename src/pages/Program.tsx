@@ -1,4 +1,3 @@
-
 import {
   Table,
   TableBody,
@@ -163,12 +162,9 @@ const Program = () => {
                 </TableCell>
                 <TableCell className={`font-medium ${
                   isSessionHeader(session.topic) 
-                    ? "text-[#8B5CF6] flex items-center gap-2" 
+                    ? "text-[#8B5CF6]" 
                     : ""
                 }`}>
-                  {isSessionHeader(session.topic) && (
-                    <BookOpen className="h-5 w-5" />
-                  )}
                   {session.topic}
                 </TableCell>
                 <TableCell className="text-secondary-dark">
