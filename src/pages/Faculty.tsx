@@ -52,6 +52,48 @@ const Faculty = () => {
       credentials: "MD",
       specialization: "Radiation Oncology",
     },
+    {
+      name: "Dr. Abhishek Raj",
+      role: "Medical Oncologist",
+      photo: "/doc-img/doc7.jpg",
+      credentials: "MD",
+      specialization: "Medical Oncology",
+    },
+    {
+      name: "Dr. Mukesh Patekar",
+      role: "Medical Oncologist",
+      photo: "/doc-img/doc8.jpg",
+      credentials: "MD",
+      specialization: "Medical Oncology",
+    },
+    {
+      name: "Dr. Viney Kumar (RO)",
+      role: "Medical Oncologist",
+      photo: "/doc-img/doc11.jpg",
+      credentials: "MD",
+      specialization: "Medical Oncology",
+    },
+    {
+      name: "Dr. Kapil Goyal",
+      role: "Medical Oncologist ",
+      photo: "/doc-img/doc9.jpg",
+      credentials: "MD",
+      specialization: "Hematologic Oncology",
+    },
+    {
+      name: "Dr Deepak Sundariyal",
+      role: "Hemato Oncologist ",
+      photo: "/doc-img/doc10.jpg",
+      credentials: "MD",
+      specialization: "Hemato Oncology",
+    },
+    {
+      name: "Dr Ankit Batra",
+      role: "Medical Oncologist ",
+      photo: "/doc-img/doc12.jpg",
+      credentials: "MD",
+      specialization: "Hematologic Oncology",
+    },
   ];
 
   return (
