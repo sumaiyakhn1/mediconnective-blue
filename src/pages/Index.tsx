@@ -108,36 +108,10 @@ const Index = () => {
         </Carousel>
       </div>
 
-      {/* Countdown Section */}
-      <div className="relative py-16 bg-gradient-to-br from-primary/5 to-primary/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-primary">Time Until the Event</h2>
-            <p className="mt-2 text-gray-600">Join us on March 8, 2025</p>
-          </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-            {Object.entries(timeLeft).map(([unit, value]) => (
-              <div 
-                key={unit}
-                className="bg-white/30 backdrop-blur-lg border border-white/20 rounded-2xl p-6 shadow-lg transform hover:scale-105 transition-transform duration-300"
-              >
-                <div className="text-4xl font-bold text-primary mb-2">
-                  {value}
-                </div>
-                <div className="text-sm text-gray-600 capitalize">
-                  {unit}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
       {/* Marquee Section */}
       <div className="bg-primary text-white py-3 overflow-hidden">
         <div className="animate-marquee whitespace-nowrap inline-block">
-        {[...announcements, ...announcements].map((announcement, index) => (
+          {[...announcements, ...announcements].map((announcement, index) => (
             <span key={index} className="mx-8">
               {announcement} •
             </span>
@@ -145,80 +119,90 @@ const Index = () => {
         </div>
       </div>
 
+      {/* Countdown Section */}
+      <div className="py-8 bg-gradient-to-r from-primary/5 to-primary/10">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="flex flex-wrap justify-center gap-4">
+            {Object.entries(timeLeft).map(([unit, value]) => (
+              <div 
+                key={unit}
+                className="bg-white/50 backdrop-blur px-6 py-3 rounded-lg shadow-sm flex items-center gap-2"
+              >
+                <span className="text-2xl font-bold text-primary">{value}</span>
+                <span className="text-sm text-gray-600 capitalize">{unit}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
       <div className="flex justify-center bg-gray-100 min-h-screen px-4">
-      <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200 max-w-6xl w-full">    
-  <h2 className="text-xl font-semibold text-blue-600 mb-4"> Dear Friends,</h2>
+        <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200 max-w-6xl w-full">    
+          <h2 className="text-xl font-semibold text-blue-600 mb-4"> Dear Friends,</h2>
 
-  <p className="text-gray-700">
-   
-   
-    
-  </p>
-  
-  <p className="text-gray-700">
-    With immense pleasure, we would like to invite you for the Conference – 
-    <span className="font-semibold"> “KUMAON CANCER CONCLAVE 2025” </span> 
-    (Cutting Edge to Real World) to be held on 
-    <span className="font-semibold"> Saturday, 8th March 2025 </span> 
-    at Hotel Manu Maharani, Ramnagar Nainital.
-  </p>
+          <p className="text-gray-700">
+           
+           
+          </p>
+          
+          <p className="text-gray-700">
+            With immense pleasure, we would like to invite you for the Conference – 
+            <span className="font-semibold"> “KUMAON CANCER CONCLAVE 2025” </span> 
+            (Cutting Edge to Real World) to be held on 
+            <span className="font-semibold"> Saturday, 8th March 2025 </span> 
+            at Hotel Manu Maharani, Ramnagar Nainital.
+          </p>
 
-  <p className="text-gray-700 mt-2">
-  This conference is organized under the <span className="font-semibold"> aegis of Onco Imaging and Therapeutics India </span>and aims to bring together Medical, Radiation, and Surgical Oncologists, Hematologists, and other healthcare professionals.
-  </p>
+          <p className="text-gray-700 mt-2">
+          This conference is organized under the <span className="font-semibold"> aegis of Onco Imaging and Therapeutics India </span>and aims to bring together Medical, Radiation, and Surgical Oncologists, Hematologists, and other healthcare professionals.
+          </p>
 
-  <p className="text-gray-700 mt-2">
-    The Conference will be organized under the aegis of 
-    <span className="font-semibold"> "ONCO IMAGING AND THERAPEUTICS INDIA". </span>
-   the conference will focus on translating the latest advancements in oncology into real-world clinical applications. It will feature insightful discussions, expert-led sessions, and interactive workshops, making it a valuable learning opportunity for students, researchers, and academicians alike.
-  </p>
+          <p className="text-gray-700 mt-2">
+            The Conference will be organized under the aegis of 
+            <span className="font-semibold"> "ONCO IMAGING AND THERAPEUTICS INDIA". </span>
+           the conference will focus on translating the latest advancements in oncology into real-world clinical applications. It will feature insightful discussions, expert-led sessions, and interactive workshops, making it a valuable learning opportunity for students, researchers, and academicians alike.
+          </p>
 
-  <p className="text-gray-600 italic mt-2">
-  Our goal is to foster 
-  <span className="font-semibold"> collaboration, innovation, and impactful change in cancer care, equipping participants with enhanced knowledge and tools to improve patient outcomes.</span>
-  </p>
+          <p className="text-gray-600 italic mt-2">
+          Our goal is to foster 
+          <span className="font-semibold"> collaboration, innovation, and impactful change in cancer care, equipping participants with enhanced knowledge and tools to improve patient outcomes.</span>
+          </p>
 
-  <p className="text-gray-700 mt-2">
-  Nestled in the picturesque Kumaon region, Ramnagar, Nainital, offers a perfect blend of scientific engagement and natural tranquility. Known for its serene landscapes, rich biodiversity, and historical significance, the location provides an inspiring environment to learn, collaborate, and reflect.
-  </p>
+          <p className="text-gray-700 mt-2">
+          Nestled in the picturesque Kumaon region, Ramnagar, Nainital, offers a perfect blend of scientific engagement and natural tranquility. Known for its serene landscapes, rich biodiversity, and historical significance, the location provides an inspiring environment to learn, collaborate, and reflect.
+          </p>
 
-  <p className="text-gray-700 mt-2">
-  This joint collaborative conference offers industry leaders a platform to showcase innovations, connect with experts, and shape the future of cancer treatment.  <span className="font-semibold">Ujala Cygnus Hospital ,</span>joins as our  <span className="font-semibold"> Academic Partner </span> with  <span className="font-semibold"> AMD Global Net Pvt. Ltd. </span> as the official event coordinator for a seamless experience.
-   
-  </p>
+          <p className="text-gray-700 mt-2">
+          This joint collaborative conference offers industry leaders a platform to showcase innovations, connect with experts, and shape the future of cancer treatment.  <span className="font-semibold">Ujala Cygnus Hospital ,</span>joins as our  <span className="font-semibold"> Academic Partner </span> with  <span className="font-semibold"> AMD Global Net Pvt. Ltd. </span> as the official event coordinator for a seamless experience.
+           
+          </p>
 
-  <p className="text-gray-700 mt-2">
-  We look forward to your valuable support and participation in making this conference a resounding success. For further details, please feel free to reach out.
-  </p>
+          <p className="text-gray-700 mt-2">
+          We look forward to your valuable support and participation in making this conference a resounding success. For further details, please feel free to reach out.
+          </p>
 
- 
-
-  <p className="text-gray-700 mt-4">Thank You!</p>
-  <p className="text-gray-700">Warm Regards,</p>
-  <div className="flex items-center justify-between">
-  <div>
-  <div className="ml-4">
-    <img src="/shalabh.png" alt="MedConf 2024 Logo" className="h-40 w-auto" />
+          <p className="text-gray-700 mt-4">Thank You!</p>
+          <p className="text-gray-700">Warm Regards,</p>
+          <div className="flex items-center justify-between">
+          <div>
+          <div className="ml-4">
+            <img src="/shalabh.png" alt="MedConf 2024 Logo" className="h-40 w-auto" />
+          </div>
+            <p className="text-gray-900 font-medium">Dr. Shalabh Arora</p>
+            
+            <p className="text-gray-700">Program - Convener</p>
+            <p className="text-gray-700">Cancer Specialist</p>
+            <p className="text-gray-700">Ujala Cygnus Central Hospital</p>
+            <p className="text-gray-700">Haldwani, Uttarakhand - 262139</p>
+            <p className="text-gray-700">Ph. 7418385321</p>
+          </div>
+          <div className="ml-4">
+           
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-    <p className="text-gray-900 font-medium">Dr. Shalabh Arora</p>
-    
-    <p className="text-gray-700">Program - Convener</p>
-    <p className="text-gray-700">Cancer Specialist</p>
-    <p className="text-gray-700">Ujala Cygnus Central Hospital</p>
-    <p className="text-gray-700">Haldwani, Uttarakhand - 262139</p>
-    <p className="text-gray-700">Ph. 7418385321</p>
-  </div>
-  <div className="ml-4">
-   
-  </div>
-</div>
-
-
-
-</div>
-</div>
-</div>
-
   );
 };
 
