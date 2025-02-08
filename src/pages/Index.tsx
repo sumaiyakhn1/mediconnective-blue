@@ -61,7 +61,6 @@ const Index = () => {
 
   return (
     <div className="animate-fade-in">
-      {/* Hero Section */}
       <div className="relative min-h-[60vh] flex items-center">
         <Carousel className="w-full">
           <CarouselContent>
@@ -108,7 +107,6 @@ const Index = () => {
         </Carousel>
       </div>
 
-      {/* Marquee Section */}
       <div className="bg-primary text-white py-3 overflow-hidden">
         <div className="animate-marquee whitespace-nowrap inline-block">
           {[...announcements, ...announcements].map((announcement, index) => (
@@ -119,9 +117,9 @@ const Index = () => {
         </div>
       </div>
 
-      {/* Countdown Section */}
       <div className="py-8 bg-gradient-to-r from-primary/5 to-primary/10">
         <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-primary text-center mb-6">Time Until The Conference</h2>
           <div className="flex flex-wrap justify-center gap-4">
             {Object.entries(timeLeft).map(([unit, value]) => (
               <div 
