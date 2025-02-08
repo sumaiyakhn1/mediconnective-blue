@@ -6,6 +6,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { useEffect, useState } from "react";
 
 const Index = () => {
   const images = [
@@ -23,8 +24,6 @@ const Index = () => {
     }
   ];
 
-
-
   const announcements = [
     "Session 1: Breast Cancer",
     "Session 2: Lung Cancer",
@@ -32,6 +31,33 @@ const Index = () => {
     "Session 4: Gyne Oncology/Genitourinary",
     "Session 5: Hematology",
   ];
+
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0
+  });
+
+  useEffect(() => {
+    const calculateTimeLeft = () => {
+      const difference = new Date('2025-03-08').getTime() - new Date().getTime();
+      
+      if (difference > 0) {
+        setTimeLeft({
+          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+          hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+          minutes: Math.floor((difference / 1000 / 60) % 60),
+          seconds: Math.floor((difference / 1000) % 60)
+        });
+      }
+    };
+
+    const timer = setInterval(calculateTimeLeft, 1000);
+    calculateTimeLeft();
+
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <div className="animate-fade-in">
@@ -47,7 +73,6 @@ const Index = () => {
                     backgroundImage: `url('${image.url}')`,
                   }}
                 >
-                  {/* Dark overlay for better text readability */}
                   <div className="absolute inset-0 bg-black/50"></div>
                   
                   <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -83,6 +108,32 @@ const Index = () => {
         </Carousel>
       </div>
 
+      {/* Countdown Section */}
+      <div className="relative py-16 bg-gradient-to-br from-primary/5 to-primary/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-primary">Time Until the Event</h2>
+            <p className="mt-2 text-gray-600">Join us on March 8, 2025</p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+            {Object.entries(timeLeft).map(([unit, value]) => (
+              <div 
+                key={unit}
+                className="bg-white/30 backdrop-blur-lg border border-white/20 rounded-2xl p-6 shadow-lg transform hover:scale-105 transition-transform duration-300"
+              >
+                <div className="text-4xl font-bold text-primary mb-2">
+                  {value}
+                </div>
+                <div className="text-sm text-gray-600 capitalize">
+                  {unit}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
       {/* Marquee Section */}
       <div className="bg-primary text-white py-3 overflow-hidden">
         <div className="animate-marquee whitespace-nowrap inline-block">
@@ -93,7 +144,6 @@ const Index = () => {
           ))}
         </div>
       </div>
-
 
       <div className="flex justify-center bg-gray-100 min-h-screen px-4">
       <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200 max-w-6xl w-full">    
