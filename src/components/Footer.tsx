@@ -46,14 +46,14 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4">Partners</h3>
             <div className="flex flex-col space-y-4">
-              <a href="https://partner1.com" target="_blank" rel="noopener noreferrer" className="block w-40 h-20">
-                <img src="/plogo1.png" alt="Partner 1" className="w-full h-full object-contain" />
+              <a href="https://partner1.com" target="_blank" rel="noopener noreferrer" className="block">
+                <img src="/plogo1.png" alt="Partner 1" className="h-10 w-auto" />
               </a>
-              <a href="https://partner2.com" target="_blank" rel="noopener noreferrer" className="block w-40 h-20">
-                <img src="/plogo2.jpeg" alt="Partner 2" className="w-full h-full object-contain" />
+              <a href="https://partner2.com" target="_blank" rel="noopener noreferrer" className="block">
+                <img src="/plogo2.jpeg" alt="Partner 2" className="h-10 w-auto" />
               </a>
-              <a href="https://partner3.com" target="_blank" rel="noopener noreferrer" className="block w-40 h-20">
-                <img src="/path-to-logo3.png" alt="Partner 3" className="w-full h-full object-contain" />
+              <a href="https://partner3.com" target="_blank" rel="noopener noreferrer" className="block">
+                <img src="/path-to-logo3.png" alt="Partner 3" className="h-10 w-auto" />
               </a>
             </div>
           </div>
