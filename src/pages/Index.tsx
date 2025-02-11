@@ -151,9 +151,7 @@ const Index = () => {
             at Hotel Manu Maharani, Ramnagar Nainital.
           </p>
 
-          <p className="text-gray-700 mt-2">
-          This conference is organized under the <span className="font-semibold"> aegis of Onco Imaging and Therapeutics India </span>and aims to bring together Medical, Radiation, and Surgical Oncologists, Hematologists, and other healthcare professionals.
-          </p>
+        
 
           <p className="text-gray-700 mt-2">
             The Conference will be organized under the aegis of 
