@@ -35,7 +35,8 @@ export default function RegistrationForm() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-[url('/1200px-Panchachuli_peaks.jpg')] bg-cover bg-center bg-no-repeat py-12 px-4 sm:px-6 lg:px-8">
+
       <div className="max-w-2xl mx-auto">
         <div className="bg-white shadow-2xl rounded-3xl p-8 space-y-8">
           <div className="text-center space-y-4">

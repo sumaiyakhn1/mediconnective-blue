@@ -1,4 +1,3 @@
-
 import { Mail, Phone, Globe } from "lucide-react";
 
 const Footer = () => {
@@ -44,18 +43,19 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-4">Partners</h3>
-            <div className="flex flex-col space-y-4">
-              <a href="https://partner1.com" target="_blank" rel="noopener noreferrer" className="block">
-                <img src="/plogo1.png" alt="Partner 1" className="h-10 w-auto" />
-              </a>
-              <a href="https://partner2.com" target="_blank" rel="noopener noreferrer" className="block">
-                <img src="/plogo2.jpeg" alt="Partner 2" className="h-10 w-auto" />
-              </a>
-              <a href="https://partner3.com" target="_blank" rel="noopener noreferrer" className="block">
-                <img src="/path-to-logo3.png" alt="Partner 3" className="h-10 w-auto" />
-              </a>
-            </div>
+            <h3 className="text-xl font-semibold mb-4">Patners</h3>
+            <div className="flex space-x-4">
+  <a href="https://partner1.com" target="_blank" rel="noopener noreferrer">
+    <img src="/plogo1.png" alt="Partner 1" className="h-10 w-auto" />
+  </a>
+  <a href="https://partner2.com" target="_blank" rel="noopener noreferrer">
+    <img src="/plogo2.jpeg" alt="Partner 2" className="h-10 w-auto" />
+  </a>
+  {/* <a href="https://partner3.com" target="_blank" rel="noopener noreferrer">
+    <img src="/path-to-logo3.png" alt="Partner 3" className="h-10 w-auto" />
+  </a> */}
+</div>
+  
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-primary-light/30 text-center">
