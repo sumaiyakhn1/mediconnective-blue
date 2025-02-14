@@ -1,86 +1,90 @@
-import React, { useState, useEffect } from "react";
-import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { motion } from "framer-motion";
+import React, { useState, useEffect } from 'react';
 
-const images = [
-  { src: "/img7.jpg", title: "", description: "Womens Day special" },
-  { src: "/img8.jpg", title: "", description: "Cancer special Podcast" },
-  { src: "/img1.jpg", title: "", description: "Award function." },
-  { src: "/img4.jpg", title: "", description: "Doctors meeting" },
-  { src: "/img5.jpg", title: "", description: "Oncology conference" },
-  { src: "/img6.jpg", title: "", description: "Award function" },
+interface Image {
+  src: string;
+  caption: string;
+}
+
+const images: Image[] = [
+  { src: 'img1.jpg', caption: 'Doctor Conference Nanital' },
+  { src: 'img4.jpg', caption: 'Conference Nanital' },
+  { src: 'img5.jpg', caption: 'Doctor Conference Nanital' },
+  { src: 'img6.jpg', caption: 'Doctor Conference' },
+  { src: 'img7.jpg', caption: 'Conference Nanital' },
+  { src: 'img8.jpg', caption: 'Doctor Conference Nanital' },
+  // Add more images as needed
 ];
 
-const Gallery = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [photoIndex, setPhotoIndex] = useState(0);
-  const [isMounted, setIsMounted] = useState(false);
+const Gallery: React.FC = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
 
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    adaptiveHeight: true,
-    autoplay: true,
-    autoplaySpeed: 1000,
+  // Function to move to the next slide
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % images.length);
   };
 
+  // Automatically transition to the next slide every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(nextSlide, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-
-    
-    <div className="container mx-auto p-6">
-       <motion.h2
-      className="text-4xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 drop-shadow-lg mb-6"
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
-    >
-      Gallery
-    </motion.h2>
-    <p className="text-lg text-secondary mb-8 text-center">  
-  Explore our gallery featuring a stunning collection of moments, capturing the essence of innovation, creativity, and excellence.  
-</p>
-
-      <div className="mt-6">
-        {/* <h3 className="text-xl font-bold mb-3">Carousel View</h3> */}
-        {isMounted && (
-          <Slider {...settings}>
-            {images.map((image, index) => (
-              <div key={index}>
-                <img src={image.src} alt={image.title} className="w-full h-64 object-cover rounded-lg" />
-              </div>
-            ))}
-          </Slider>
-        )}
-      </div>
-
-   
-
-      <div className="grid grid-cols-3 gap-4">
-  {images.map((image, index) => (
-    <div key={index} className="relative cursor-pointer group">
-      <img src={image.src} alt={image.title} className="w-full h-48 object-cover rounded-lg" />
-      <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        <h3 className="text-white text-lg font-semibold">{image.title}</h3>
-        <p className="text-white text-sm">{image.description}</p>
-      </div>
-    </div>
-  ))}
+    <div className="p-2 bg-gradient-to-b from-blue-50 to-white py-4">
+      <div className="p-2 ">
+  {/* Heading and Subtitle Section */}
+  <div className="text-center mb-4">
+    <h1 className="text-5xl font-bold text-blue-600">Gallery</h1>
+    <p className="text-lg text-gray-600 mt-2 italic">
+      Explore our collection of stunning images
+    </p>
+  </div>
 </div>
 
 
+      {/* Slideshow Section */}
+      <div className="mb-8 relative">
+        <div className="relative h-96 overflow-hidden">
+          <img
+            src={images[currentSlide].src}
+            alt={images[currentSlide].caption}
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4 text-center">
+            {images[currentSlide].caption}
+          </div>
+        </div>
+        <button
+          onClick={() => setCurrentSlide((prev) => (prev - 1 + images.length) % images.length)}
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2"
+        >
+          &lt;
+        </button>
+        <button
+          onClick={nextSlide}
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2"
+        >
+          &gt;
+        </button>
+      </div>
 
+      {/* Grid Gallery Section */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {images.map((image, index) => (
+          <div key={index} className="relative">
+            <img
+              src={image.src}
+              alt={image.caption}
+              className="w-full h-48 object-cover"
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 text-center">
+              {image.caption}
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
+
 export default Gallery;

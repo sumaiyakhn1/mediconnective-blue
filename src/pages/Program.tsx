@@ -145,18 +145,19 @@ const Program = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-b from-white to-secondary-light">
+    <div className="min-h-screen bg-[url('/3-cells.jpg')] bg-cover bg-center bg-no-repeat py-12 px-4 sm:px-6 lg:px-8">
       <div className="text-center max-w-4xl mx-auto mb-16">
-        <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-medium mb-6">
-          Conference Program
-        </h1>
-        <p className="text-lg text-secondary mb-8">
-          Join us for an enlightening series of presentations and discussions led by
-          renowned experts in the field of oncology.
-        </p>
+      <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-blue-400 mb-6">
+  Conference Program
+</h1>
+<p className="text-lg text-gray-200 mb-8">
+  Join us for an enlightening series of presentations and discussions led by
+  renowned experts in the field of oncology.
+</p>
+
         <Button
           onClick={downloadPDF}
-          className="mb-8 bg-primary hover:bg-primary/90 text-white"
+          className="mb-4 bg-primary hover:bg-primary/90 text-white"
         >
           <Download className="mr-2 h-4 w-4" />
           Download Schedule PDF
