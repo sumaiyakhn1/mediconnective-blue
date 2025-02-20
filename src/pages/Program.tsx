@@ -9,6 +9,8 @@ import {
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
+import { motion } from "framer-motion";
+
 
 const programSchedule = [
   {
@@ -145,16 +147,38 @@ const Program = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[url('/3-cells.jpg')] bg-cover bg-center bg-no-repeat py-12 px-4 sm:px-6 lg:px-8">
-      <div className="text-center max-w-4xl mx-auto mb-16">
-      <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-blue-400 mb-6">
-  Conference Program
-</h1>
-<p className="text-lg text-gray-200 mb-8">
-  Join us for an enlightening series of presentations and discussions led by
-  renowned experts in the field of oncology.
-</p>
+<div className="min-h-screen bg-gradient-to-b from-gray-900 to-black relative py-12 px-4 sm:px-6 lg:px-8">
+<div className="absolute inset-0 bg-[url('/subtle-texture.png')] opacity-10"></div>  
+    <motion.div
+      className="text-center max-w-4xl mx-auto mb-16"
+      initial={{ opacity: 0, y: -30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
+      <motion.h1
+        className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-blue-400 mb-6"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+      >
+        Conference Program
+      </motion.h1>
 
+      <motion.p
+        className="text-lg text-gray-200 mb-8"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.4 }}
+      >
+        Join us for an enlightening series of presentations and discussions led by
+        renowned experts in the field of oncology.
+      </motion.p>
+
+      <motion.div
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.6 }}
+      >
         <Button
           onClick={downloadPDF}
           className="mb-4 bg-primary hover:bg-primary/90 text-white"
@@ -162,7 +186,8 @@ const Program = () => {
           <Download className="mr-2 h-4 w-4" />
           Download Schedule PDF
         </Button>
-      </div>
+      </motion.div>
+    </motion.div>
 
       <div className="rounded-2xl border bg-white shadow-lg overflow-hidden">
         <Table>

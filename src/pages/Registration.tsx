@@ -1,6 +1,8 @@
 
 import React from 'react';
 import { toast } from "sonner";
+import { motion } from "framer-motion";
+
 
 export default function RegistrationForm() {
   const [result, setResult] = React.useState("");
@@ -39,13 +41,32 @@ export default function RegistrationForm() {
 
       <div className="max-w-2xl mx-auto">
         <div className="bg-white shadow-2xl rounded-3xl p-8 space-y-8">
-          <div className="text-center space-y-4">
-            <h1 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500">
-              Kumaon Cancer Conclave 2025
-            </h1>
-            <h2 className="text-xl font-semibold text-gray-700">Registration Form</h2>
-            <p className="text-gray-500">Please fill in your details to register for the conference</p>
-          </div>
+        <div className="text-center space-y-4">
+  <motion.h1
+    className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500"
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+  >
+    Kumaon Cancer Conclave 2025
+  </motion.h1>
+  <motion.h2
+    className="text-xl font-semibold text-gray-700"
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1, delay: 0.2 }}
+  >
+    Registration Form
+  </motion.h2>
+  <motion.p
+    className="text-gray-500"
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1, delay: 0.4 }}
+  >
+    Please fill in your details to register for the conference
+  </motion.p>
+</div>;
 
           <form onSubmit={onSubmit} className="space-y-6">
             <div className="space-y-4">
