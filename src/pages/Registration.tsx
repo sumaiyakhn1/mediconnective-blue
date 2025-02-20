@@ -66,7 +66,7 @@ export default function RegistrationForm() {
   >
     Please fill in your details to register for the conference
   </motion.p>
-</div>;
+</div>
 
           <form onSubmit={onSubmit} className="space-y-6">
             <div className="space-y-4">
