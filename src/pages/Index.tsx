@@ -18,11 +18,11 @@ const Index = () => {
   ];
 
   const announcements = [
-    "Session 1: Breast Cancer",
-    "Session 2: Lung Cancer",
-    "Session 3: Gastrointestinal Oncology",
-    "Session 4: Gyne Oncology/Genitourinary",
-    "Session 5: Hematology",
+    "• Session 1: Breast Cancer •",
+    "• Session 2: Lung Cancer •",
+    "• Session 3: Gastrointestinal Oncology •",
+    "• Session 4: Gyne Oncology/Genitourinary •",
+    "• Session 5: Hematology •",
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -114,15 +114,17 @@ const Index = () => {
 
       {/* Scrolling Announcements */}
       <div className="bg-primary text-white py-3 overflow-hidden">
-        <div className="animate-marquee whitespace-nowrap inline-block">
-          {[...announcements, ...announcements].map((announcement, index) => (
-            <span key={index} className="mx-8">
-              
-              {announcement} •
-            </span>
-          ))}
-        </div>
-      </div>
+      <div className="animate-marquee whitespace-nowrap inline-block">
+  <span className="mx-8">•</span>
+  {[...announcements, ...announcements].map((announcement, index) => (
+    <span key={index} className="mx-8">
+      {announcement}
+    </span>
+  ))}
+</div>
+
+</div>
+
 
       <motion.div
       initial={{ opacity: 0, y: 50 }}
