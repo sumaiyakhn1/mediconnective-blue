@@ -26,7 +26,7 @@ export default function ComingSoonGallery() {
           transition={{ duration: 1 }}
           className="text-4xl font-bold text-center"
         >
-          Kumaon Cancer Conclave - Coming Soon
+          Kumaon Cancer Conclave Gallery - Coming Soon
         </motion.h1>
       )}
     </div>
