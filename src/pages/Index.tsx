@@ -18,11 +18,11 @@ const Index = () => {
   ];
 
   const announcements = [
-    "- Session 1: Breast Cancer -",
-    "- Session 2: Lung Cancer -",
-    "- Session 3: Gastrointestinal Oncology -",
-    "- Session 4: Gyne Oncology/Genitourinary -",
-    "- Session 5: Hematology -",
+    "• Session 1: Breast Cancer •",
+    "• Session 2: Lung Cancer •",
+    "• Session 3: Gastrointestinal Oncology •",
+    "• Session 4: Gyne Oncology/Genitourinary •",
+    "• Session 5: Hematology •",
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
