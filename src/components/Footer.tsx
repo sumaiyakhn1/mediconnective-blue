@@ -10,15 +10,15 @@ const Footer = () => {
             <div className="space-y-2">
               <p className="flex items-center gap-2">
                 <Mail size={18} />
-                contact@medconf2024.com
+                amdglobalnet@gmail.com
               </p>
               <p className="flex items-center gap-2">
                 <Phone size={18} />
-                +1 (555) 123-4567
+                +91 9319311009
               </p>
               <p className="flex items-center gap-2">
                 <Globe size={18} />
-                www.medconf2024.com
+                www.amdglobalnet.com
               </p>
             </div>
           </div>
@@ -26,42 +26,52 @@ const Footer = () => {
             <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/registration" className="hover:text-primary-light">
+                <a href="/Registration" className="hover:text-primary-light">
                   Register Now
                 </a>
               </li>
               <li>
-                <a href="/program" className="hover:text-primary-light">
+                <a href="/Program" className="hover:text-primary-light">
                   Conference Program
                 </a>
               </li>
               <li>
-                <a href="/faculty" className="hover:text-primary-light">
+                <a href="/Faculty" className="hover:text-primary-light">
                   Meet Our Speakers
                 </a>
               </li>
             </ul>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-4">Patners</h3>
-            <div className="flex space-x-4">
-  <a href="https://partner1.com" target="_blank" rel="noopener noreferrer">
-    <img src="/plogo1.png" alt="Partner 1" className="h-10 w-auto" />
-  </a>
-  <a href="https://partner2.com" target="_blank" rel="noopener noreferrer">
-    <img src="/plogo2.jpeg" alt="Partner 2" className="h-10 w-auto" />
-  </a>
-  {/* <a href="https://partner3.com" target="_blank" rel="noopener noreferrer">
-    <img src="/path-to-logo3.png" alt="Partner 3" className="h-10 w-auto" />
-  </a> */}
+          
+  <h3 className="text-xl font-semibold mb-4">Partners</h3>
+  <div className="flex flex-col items-center space-y-2 mr-20">
+    {/* First logo full-width */}
+    <a href="https://ujalacygnus.com/" target="_blank" rel="noopener noreferrer">
+      <img src="/plogo1.png" alt="Partner 1" className="h-12 w-auto mr-20" />
+    </a>
+
+    {/* Last two logos in a row */}
+    <div className="flex space-x-4 mr-20">
+      <a href="https://amdglobalnet.com/" target="_blank" rel="noopener noreferrer">
+        <img src="/plogo2.jpeg" alt="Partner 2" className="h-12 w-25" />
+      </a>
+      <a href="https://oncoimaging.in/index.html#slider" target="_blank" rel="noopener noreferrer">
+        <img src="/logo.png" alt="Partner 3" className="h-12 w-17" />
+      </a>
+    </div>
+  </div>
 </div>
-  
+
+
+
+
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-primary-light/30 text-center">
           <p>© 2024 Medical Conference. All rights reserved.</p>
         </div>
-      </div>
+     
     </footer>
   );
 };

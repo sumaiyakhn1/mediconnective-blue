@@ -97,7 +97,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="font-medium">Email</p>
-                  <p className="text-gray-500">asifwork76@gmail.com</p>
+                  <p className="text-gray-500">amdglobalnet@gmail.com</p>
                 </div>
               </div>
 
@@ -107,7 +107,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="font-medium">Phone</p>
-                  <p className="text-gray-500">+91 9215000721</p>
+                  <p className="text-gray-500">+91 9319311009</p>
                 </div>
               </div>
 
@@ -117,7 +117,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="font-medium">LinkedIn</p>
-                  <a href="#" className="text-blue-600 hover:underline">Connect with us</a>
+                  <a href="#" className="text-blue-600 hover:underline">Coming soon</a>
                 </div>
               </div>
 
@@ -127,7 +127,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="font-medium">Twitter</p>
-                  <a href="#" className="text-blue-600 hover:underline">Follow us</a>
+                  <a href="#" className="text-blue-600 hover:underline">Coming soon</a>
                 </div>
               </div>
             </div>

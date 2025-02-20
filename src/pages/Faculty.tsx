@@ -94,10 +94,32 @@ const Faculty = () => {
       credentials: "MD",
       specialization: "Hematologic Oncology",
     },
+    {
+      name: "Dr Amit Sehrawat",
+      role: "Medical Oncologist ",
+      photo: "/doc-img/doc13.jpg",
+      credentials: "MD",
+      specialization: "Medical Oncology",
+    },
+    {
+      name: "Dr Prabhat Malik",
+      role: "Medical Oncologist ",
+      photo: "/doc-img/doc14.jpg",
+      credentials: "MD",
+      specialization: "Lung Cancer",
+    },
+    {
+      name: "Dr Rachit Ahuja",
+      role: "radiation Oncologist ",
+      photo: "/doc-img/doc15.jpg",
+      credentials: "MD",
+      specialization: "Radiologist",
+    },
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 min-h-screen bg-gradient-to-b from-blue-50 to-white py-12">
+      
       {/* Modern Introduction Section */}
       <div className="mb-16 bg-gradient-to-r from-primary-light via-white to-primary-light rounded-2xl p-8 shadow-xl">
         <div className="max-w-3xl mx-auto text-center">
@@ -119,7 +141,7 @@ const Faculty = () => {
               <p className="text-secondary">Research Publications</p>
             </div>
             <div className="text-center">
-              <h3 className="text-3xl font-bold text-primary-medium mb-2">6</h3>
+              <h3 className="text-3xl font-bold text-primary-medium mb-2">06</h3>
               <p className="text-secondary">Specialized Departments</p>
             </div>
           </div>

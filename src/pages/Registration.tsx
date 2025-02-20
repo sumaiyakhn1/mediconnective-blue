@@ -86,31 +86,37 @@ export default function RegistrationForm() {
               </div>
 
               <div className="group">
-                <label htmlFor="designation" className="block text-sm font-medium text-gray-700 mb-1">Current Designation</label>
-                <input 
-                  type="text" 
-                  id="designation" 
-                  name="designation" 
-                  required 
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 outline-none"
-                  placeholder="Enter your designation"
-                />
-              </div>
-
-              <div className="group">
-                <label htmlFor="institution" className="block text-sm font-medium text-gray-700 mb-1">Institution</label>
+                <label htmlFor="institution" className="block text-sm font-medium text-gray-700 mb-1">Speciality</label>
                 <select 
                   id="institution" 
                   name="institution" 
                   required 
                   className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 outline-none bg-white"
                 >
-                  <option value="">Select Institution</option>
-                  <option value="Institution1">Institution 1</option>
-                  <option value="Institution2">Institution 2</option>
-                  <option value="Institution3">Institution 3</option>
+                  <option value="">Select Speciality</option>
+                  <option value="Institution1">Medical Oncology</option>
+                  <option value="Institution2">Radiation Oncology</option>
+                  <option value="Institution3">Surgical Oncology</option>
+                  <option value="Institution3">Cytopathology</option>
+                  <option value="Institution3">Interventional Radiology (IR)</option>
+                  <option value="Institution3">Hematology Oncology</option>
+                  <option value="Institution3">Pain and Palliative Oncology</option>
                 </select>
               </div>
+
+              <div className="group">
+                <label htmlFor="designation" className="block text-sm font-medium text-gray-700 mb-1">Hospital Name</label>
+                <input 
+                  type="text" 
+                  id="designation" 
+                  name="designation" 
+                  required 
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 outline-none"
+                  placeholder="Enter your hospital name"
+                />
+              </div>
+
+             
             </div>
 
             <button 
