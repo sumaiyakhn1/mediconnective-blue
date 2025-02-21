@@ -116,6 +116,48 @@ const Faculty = () => {
       credentials: "MD",
       specialization: "Radiologist",
     },
+    {
+      name: "Dr Rakesh Sharma",
+      role: "Medical Oncologist ",
+      photo: "/doc-img/doc16.jpg",
+      credentials: "MD",
+      specialization: "Medical Oncology",
+    },
+    {
+      name: "Dr Nithin S G",
+      role: "Medical Oncologist ",
+      photo: "/doc-img/doc17.jpg",
+      credentials: "MD",
+      specialization: "Medical Oncology",
+    },
+    {
+      name: "Dr Mansi Barthwal",
+      role: "Radiation Oncologist ",
+      photo: "/doc-img/doc18.jpg",
+      credentials: "MD",
+      specialization: "Radiologist",
+    },
+    {
+      name: "Dr Anita Malik",
+      role: "Radiation Oncologist ",
+      photo: "/doc-img/doc19.jpg",
+      credentials: "MD",
+      specialization: "Radiologist",
+    },
+    {
+      name: "Dr Aman Chaudhary",
+      role: "Medical Oncologist ",
+      photo: "/doc-img/doc20.avif",
+      credentials: "MD",
+      specialization: "Medical Oncology",
+    },
+    {
+      name: "Dr Lalit Mohan",
+      role: "Radiation Oncologist ",
+      photo: "/doc-img/doc21.jpg",
+      credentials: "MD",
+      specialization: "Radiologist",
+    },
   ];
 
   return (

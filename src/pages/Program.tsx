@@ -135,7 +135,7 @@ const Program = () => {
     console.log("Download button clicked");  // Debugging
   
     const link = document.createElement("a");
-    link.href = "http://localhost:8080/conference-program.pdf";  // Explicit URL
+    link.href = "/conference-program.pdf";  // Explicit URL
     link.download = "conference-program.pdf";
     document.body.appendChild(link);
     link.click();
