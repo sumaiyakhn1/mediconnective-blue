@@ -111,7 +111,7 @@ const Faculty = () => {
     },
     {
       name: "Dr Rachit Ahuja",
-      role: "radiation Oncologist ",
+      role: "Radiation Oncologist ",
       photo: "/doc-img/doc15.jpg",
       credentials: "MD",
       specialization: "Radiologist",
@@ -157,6 +157,27 @@ const Faculty = () => {
       photo: "/doc-img/doc21.jpg",
       credentials: "MD",
       specialization: "Radiologist",
+    },
+    {
+      name: "Dr Kapil Goyal",
+      role: "Medical Oncologist ",
+      photo: "/doc-img/doc22.webp",
+      credentials: "MD",
+      specialization: "Medical Oncology",
+    },
+    {
+      name: "Dr Saurav Nandi",
+      role: "Surgical Oncologist ",
+      photo: "/doc-img/doc23.jpeg",
+      credentials: "MD",
+      specialization: "Surgical Oncology",
+    },
+    {
+      name: "Dr Raja Pramanik",
+      role: "Medical Oncologist ",
+      photo: "/doc-img/doc24.png",
+      credentials: "DM",
+      specialization: "Medical Oncology",
     },
   ];
 
