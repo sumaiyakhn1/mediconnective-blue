@@ -132,19 +132,23 @@ const Program = () => {
   const isSessionHeader = (topic: string) => topic.startsWith("Session");
 
   const downloadPDF = () => {
-    const link = document.createElement('a');
-    link.href = '/conference-program.pdf';  // Path to your PDF in public folder
-    link.download = 'conference-program.pdf';
+    console.log("Download button clicked");  // Debugging
+  
+    const link = document.createElement("a");
+    link.href = "http://localhost:8080/conference-program.pdf";  // Explicit URL
+    link.download = "conference-program.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-
+  
     toast({
       title: "Success",
       description: "Program schedule downloaded successfully!",
       duration: 3000,
     });
   };
+  
+  
 
   return (
 <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black relative py-12 px-4 sm:px-6 lg:px-8">
@@ -174,19 +178,27 @@ const Program = () => {
         renowned experts in the field of oncology.
       </motion.p>
 
+      
       <motion.div
-        initial={{ scale: 0.8, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.6 }}
-      >
-        <Button
-          onClick={downloadPDF}
-          className="mb-4 bg-primary hover:bg-primary/90 text-white"
-        >
-          <Download className="mr-2 h-4 w-4" />
-          Download Schedule PDF
-        </Button>
-      </motion.div>
+  initial={{ scale: 0.8, opacity: 0 }}
+  animate={{ scale: 1, opacity: 1 }}
+  transition={{ duration: 0.6, delay: 0.6 }}
+  className="relative z-50 flex justify-center items-center w-full"
+>
+  <Button
+    onClick={downloadPDF}
+    className="mb-4 bg-primary hover:bg-primary/90 text-white cursor-pointer"
+  >
+    <Download className="mr-2 h-4 w-4" />
+    Download Schedule PDF
+  </Button>
+</motion.div>
+
+
+
+
+
+
     </motion.div>
 
       <div className="rounded-2xl border bg-white shadow-lg overflow-hidden">

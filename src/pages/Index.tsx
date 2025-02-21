@@ -85,7 +85,7 @@ const Index = () => {
                         Kumaon Cancer Conclave 2025
                       </h1>
                       <p className="text-xl md:text-2xl mb-8 text-white">
-                        Advancing Healthcare Through Innovation
+                       Cutting Edge to Real World
                       </p>
                       <div className="flex flex-col md:flex-row justify-center items-center gap-6 text-lg text-white">
                         <div className="flex items-center gap-2">
