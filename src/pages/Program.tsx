@@ -174,8 +174,7 @@ const Program = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.4 }}
       >
-        Join us for an enlightening series of presentations and discussions led by
-        renowned experts in the field of oncology.
+        Join us for an enlightening series of presentations and discussions led by renowned experts in the field of oncology, taking place at <strong>Hotel Manu Maharani, Ramnagar Nainital</strong> on <strong>March 8.</strong>
       </motion.p>
 
       
