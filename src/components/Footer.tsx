@@ -61,54 +61,47 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Partners Section */}
-      <div className="container mx-auto border-t border-gray-700 pt-8">
-  {/* Centered Heading */}
-  <h3 className="text-lg font-semibold mb-8 text-center">Our Partners</h3>
+      <div className="container mx-auto border-t border-gray-700 pt-8 px-4">
+      {/* Centered Heading */}
+      <h3 className="text-lg font-semibold mb-8 text-center">Our Partners</h3>
 
-  {/* Partner Logos */}
-  <div className="flex flex-wrap justify-center items-center gap-12">
-    {/* Partner 1 */}
-    <div className="flex flex-col items-center ml-[-150px]">
-    <a href="https://ujalacygnus.com/" target="_blank" rel="noopener noreferrer">
-      <img
-        src="/plogo1.png"
-        alt="Academic Partner 1"
-        className="w-20 h-20 mb-2"
-      />
-      </a>
-      <p className="text-sm text-gray-400">Ujala Cygnus Central Hospital Haldwani</p>
-      <p className="text-xs text-gray-500">Academic Partner</p>
-    </div>
+      {/* Partner Logos */}
+      <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-12">
+        {/* Partner 0 */}
+        <div className="flex flex-col items-center text-center w-36 sm:w-auto">
+          <a href="https://ukmedicalcouncil.org/" target="_blank" rel="noopener noreferrer">
+            <img src="/plogo2.png" alt="Event Management Logo" className="w-20 h-20 mb-2" />
+          </a>
+          <p className="text-sm text-gray-400">Uttarakhand Medical Council</p>
+          <p className="text-xs text-gray-500">Credited 4 Star</p>
+        </div>
 
-    {/* Partner 2 */}
-    <div className="flex flex-col items-center">
-    
-      <img
-        src="/plogonco.png"
-        alt="Academic Partner 2"
-        className="w-20 h-20 mb-2"
-      />
-     
-      <p className="text-sm text-gray-400">ONCO IMAGING AND THERAPEUTICS INDIA</p>
-      <p className="text-xs text-gray-500">Academic Partner</p>
-    </div>
+        {/* Partner 1 */}
+        <div className="flex flex-col items-center text-center w-36 sm:w-auto">
+          <a href="https://ujalacygnus.com/" target="_blank" rel="noopener noreferrer">
+            <img src="/plogo1.png" alt="Academic Partner 1" className="w-20 h-20 mb-2" />
+          </a>
+          <p className="text-sm text-gray-400">Ujala Cygnus Central Hospital Haldwani</p>
+          <p className="text-xs text-gray-500">Academic Partner</p>
+        </div>
 
-    {/* Partner 3 */}
-    
-    <div className="flex flex-col items-center">
-    < a href="https://www.amdglobalnet.com/" target="_blank" rel="noopener noreferrer">
-      <img
-        src="/logo.webp"
-        alt="Event Management Logo"
-        className="w-20 h-20 mb-2"
-      /> 
-    </a>
-      <p className="text-sm text-gray-400">AMD Global Net</p>
-      <p className="text-xs text-gray-500">Event Management</p>
-      
+        {/* Partner 2 */}
+        <div className="flex flex-col items-center text-center w-36 sm:w-auto">
+          <img src="/plogonco.png" alt="Academic Partner 2" className="w-20 h-20 mb-2" />
+          <p className="text-sm text-gray-400">ONCO IMAGING AND THERAPEUTICS INDIA</p>
+          <p className="text-xs text-gray-500">Academic Partner</p>
+        </div>
+
+        {/* Partner 3 */}
+        <div className="flex flex-col items-center text-center w-36 sm:w-auto">
+          <a href="https://www.amdglobalnet.com/" target="_blank" rel="noopener noreferrer">
+            <img src="/logo.webp" alt="Event Management Logo" className="w-20 h-20 mb-2" />
+          </a>
+          <p className="text-sm text-gray-400">AMD Global Net</p>
+          <p className="text-xs text-gray-500">Event Management</p>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
     </footer>
   );
 };
