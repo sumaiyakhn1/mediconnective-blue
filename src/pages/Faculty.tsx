@@ -90,7 +90,7 @@ const Faculty = () => {
     },
     {
       name: "Dr Ankit Batra",
-      role: "CANCER EXPERT",
+      role: "Cancer Expert",
       photo: "/doc-img/doc12.jpg",
       credentials: "Medical Oncologist",
       specialization: "HIMS, Uttarakhand",
@@ -179,6 +179,57 @@ const Faculty = () => {
       credentials: "Medical Oncologist ",
       specialization: "AIIMS, New Delhi",
     },
+    {
+      name: "Dr Nilanchali Singh",
+      role: "Assistant Professor",
+      photo: "/doc-img/doc25.png",
+      credentials: "Gynecology Oncologist ",
+      specialization: "AIIMS, New Delhi",
+    },
+    {
+      name: "Dr Mansi Barthwal",
+      role: "Assistant Professor",
+      photo: "/doc-img/doc27.jpg",
+      credentials: "Radiation Oncologist ",
+      specialization: "SRHU, Uttarakhand",
+    },
+    {
+      name: "Dr Shashank Joshi",
+      role: "Assistant Professor",
+      photo: "/doc-img/doc26.jpg",
+      credentials: "Radiation Oncologist ",
+      specialization: "MAMC, New Delhi",
+    },
+    {
+      name: "Dr Anshul Gupta",
+      role: "Consultant",
+      photo: "/doc-img/doc28.jpg",
+      credentials: "Medical Oncologist ",
+      specialization: "Max Hospital, Noida",
+    },
+    {
+      name: "Dr Avriti Baveja",
+      role: "Consultant",
+      photo: "/doc-img/doc29.jpg",
+      credentials: "Hematology Oncologist",
+      specialization: "HIMS,Uttarakhand",
+    },
+    {
+      name: "Dr Sravan Dubasi",
+      role: "Consultant",
+      photo: "/doc-img/doc30.jpeg",
+      credentials: "Medical Oncologist",
+      specialization: "KIMS Hospital,Secunderabad",
+    },
+    {
+      name: "Dr Rohit Reddy",
+      role: "Consultant",
+      photo: "/doc-img/doc31.png",
+      credentials: "Medical Oncologist",
+      specialization: "Yashoda Hospitals,Malakpet",
+    },
+
+
   ];
 
   return (

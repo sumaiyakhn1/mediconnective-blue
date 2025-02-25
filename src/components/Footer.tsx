@@ -73,7 +73,7 @@ const Footer: React.FC = () => {
             <img src="/plogo2.png" alt="Event Management Logo" className="w-20 h-20 mb-2" />
           </a>
           <p className="text-sm text-gray-400">Uttarakhand Medical Council</p>
-          <p className="text-xs text-gray-500">Credited 4 Star</p>
+          <p className="text-xs text-gray-500">Credited 3 hrs C.M.E. accreditation hour</p>
         </div>
 
         {/* Partner 1 */}

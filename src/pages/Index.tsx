@@ -9,6 +9,7 @@ import {
 import { useEffect, useState } from "react";
 "use client";
 import { motion } from "framer-motion";
+import PartnersCarousel from "@/components/PartnersCarousel";
 
 const Index = () => {
   const images = [
@@ -218,12 +219,15 @@ const Index = () => {
               <p className="text-gray-700">Ph. 7418385321</p>
             </div>
             <div className="flex-shrink-0 relative top-[-20px]">
-              <img src="/shalabh.png" alt="Dr. Shalabh Arora" className="h-52 w-auto rounded-lg" />
+              <img src="/doc-img/shalabh.png" alt="Dr. Shalabh Arora" className="h-56 w-auto rounded-lg" />
             </div>
 
           </div>
 
       </div>
+    </div>
+    <div>
+      <PartnersCarousel />
     </div>
   </div>
   );
