@@ -16,7 +16,14 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
+    
+     
     <nav className="bg-white shadow-md fixed w-full z-50">
+      <div className="w-full bg-gray-800 text-white py-1 text-center text-sm">
+        Contact Us At amdglobalnet@gmail.com
+        {/* Saturday, 8th March 2025 at Hotel Manu Maharani, Ramnagar Nainital. */}
+        {/* Kumaon Cancer Conclave 2025 */}
+      </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
