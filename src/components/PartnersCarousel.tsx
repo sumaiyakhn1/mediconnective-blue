@@ -2,18 +2,17 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const partners = [
-  { name: "Sun Oncology", logo: "/logos/sun.png", description: "Innovative cancer treatments." },
+  { name: "Sun Oncology", logo: "/logo-img/logo.png", description: "Innovative cancer treatments." },
   { name: "RPG Lifesciences", logo: "/logo-img/logo1.png", description: "Leading pharmaceutical research." },
   { name: "Samarth", logo: "/logo-img/logo2.png", description: "Advanced oncology solutions." },
   { name: "Hetro", logo: "/logo-img/logo3.jpg", description: "Cutting-edge medicine production." },
-  { name: "Intas", logo: "/logo-img/logo4.png", description: "Global healthcare expertise." },
+  { name: "Intas", logo: "/logo-img/logo4.png", description: "Global healthcare expertise.7" },
   { name: "Zydus", logo: "/logo-img/logo5.jpg", description: "Innovating for a healthier world." },
   { name: "Wembrace", logo: "/logo-img/logo6.png", description: "Empowering medical advancements." },
-  { name: "Axiommax Oncology", logo: "/logos/axiommax.png", description: "Revolutionizing cancer care." },
+  { name: "Axiommax Oncology", logo: "/logo-img/logo7.png", description: "A step towards excellence" },
   { name: "Johnson & Johnson", logo: "/logo-img/logo8.svg", description: "Pioneers in medicine." },
   { name: "Merck", logo: "/logo-img/logo9.svg", description: "Pharmaceutical innovation leaders." },
   { name: "MSD", logo: "/logo-img/logo10.svg", description: "Improving Health, Improving Lives." },
-  { name: "BMS", logo: "/logo-img/logo11.png", description: "Biopharma industry leaders." },
   { name: "AstraZeneca", logo: "/logo-img/logo12.png", description: "What science can do" },
   { name: "BD", logo: "/logo-img/logo13.svg", description: "Advancing the world of health." },
   { name: "DRL", logo: "/logo-img/logo14.svg", description: "Good Health Can’t Wait." },
