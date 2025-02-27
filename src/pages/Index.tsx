@@ -206,23 +206,26 @@ const Index = () => {
           We look forward to your valuable support and participation in making this conference a resounding success. For further details, please feel free to reach out.
           </p>
 
-          <p className="text-gray-700 mt-4">Thank You!</p>
-          <p className="text-gray-700">Warm Regards,</p>
+          <div className="mt-4 text-center md:text-left">
+  <p className="text-gray-700 font-medium">Thank You!</p>
+  <p className="text-gray-700">Warm Regards,</p>
+</div>
 
-          <div className="flex items-center justify-between relative top-[-20px]">
-           <div className="flex-1">
-              <p className="text-gray-900 font-medium">Dr. Shalabh Arora</p>
-              <p className="text-gray-700">Program - Convener</p>
-              <p className="text-gray-700">Cancer Specialist</p>
-              <p className="text-gray-700">Ujala Cygnus Central Hospital</p>
-              <p className="text-gray-700">Haldwani, Uttarakhand - 262139</p>
-              <p className="text-gray-700">Ph. 7418385321</p>
-            </div>
-            <div className="flex-shrink-0 relative top-[-20px]">
-              <img src="/doc-img/shalabh.png" alt="Dr. Shalabh Arora" className="h-56 w-auto rounded-lg" />
-            </div>
 
-          </div>
+          <div className="flex flex-col md:flex-row items-center md:justify-between relative md:top-[-20px] space-y-4 md:space-y-0">
+  <div className="flex-1 text-center md:text-left">
+    <p className="text-gray-900 font-medium text-lg">Dr. Shalabh Arora</p>
+    <p className="text-gray-700">Program - Convener</p>
+    <p className="text-gray-700">Cancer Specialist</p>
+    <p className="text-gray-700">Ujala Cygnus Central Hospital</p>
+    <p className="text-gray-700">Haldwani, Uttarakhand - 262139</p>
+    <p className="text-gray-700 font-medium">Ph. 7418385321</p>
+  </div>
+  <div className="flex-shrink-0">
+    <img src="/doc-img/shalabh.png" alt="Dr. Shalabh Arora" className="h-40 w-auto md:h-56 rounded-lg" />
+  </div>
+</div>
+
 
       </div>
     </div>
