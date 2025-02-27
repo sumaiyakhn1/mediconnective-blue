@@ -13,117 +13,148 @@ import { motion } from "framer-motion";
 
 
 const programSchedule = [
-  {
-    time: "08:30 AM - 09:00 AM",
-    topic: "Registration",
-    speaker: "",
-  },
-  {
-    time: "09:00 AM - 11:00 AM",
-    topic: "Session 1: Breast Cancer",
-    speaker: "Dr. S.P Kataria / Dr. Vipul Nautiyal",
-  },
-  {
-    time: "09:00 PM - 09:30 PM",
-    topic: "Her2-low and ultra-low HR breast ",
-    speaker: "Dr. Abhishek Raj",
-  },
-  {
-    time: "09:30 AM - 10:00 AM",
-    topic: "IO in early TNBC - whom and when to offer? (Keynote-552 vs A-Brave)",
-    speaker: "Dr. Mukesh Patekar",
-  },
-  {
-    time: "10:00 AM - 11:00 AM",
-    topic: "Panel discussion - locally advancement breast cancer",
-    speaker: "Dr. Atul Batra, Dr. Viney Kumar(RO), Dr. Nalin Goyal(RO), Dr. Ritu Thakur,  Dr. Kapil Goyal(MO), Dr. Deepak Sundariyal(MO)",
-  },
-  {
-    time: "11:00 AM - 01:00 PM",
-    topic: "Session 2: Lung Cancer",
-    speaker: "Dr. Kaushal Kalra / Dr. Sweety Gupta",
-  },
-  {
-    time: "11:00 AM - 11:30 AM",
-    topic: "Current landscape of EGRFRm advanced NSCLC",
-    speaker: "Dr. Ankita Batra",
-  },
-  {
-    time: "11:30 AM - 12:00 PM",
-    topic: "Perioperative IO in NSCLC",
-    speaker: "Dr. Amit Sehrawat",
-  },
-
-  {
-    time: "12:00 PM - 01:00 PM",
-    topic: "Panel discussion - Stage III NSCLC",
-    speaker: "Dr. Prahbhat Malik, Dr Rachit Ahuja(RO), Dr. Jalal Gaur(RO), Dr. Rakesh Sharma(MO), Dr. Nitin S G(MO), Dr. Ritu Thakur(SO)",
-  },
-  {
-    time: "01:00 PM - 02:00 PM",
-    topic: "Lunch Break",
-    speaker: "",   
-  },
-  {
-    time: "02:00 PM - 04:00 PM",
-    topic: "Session 3: Gastrointestinal Oncology",
-    speaker: "Dr. Atul Sharma / Dr K C Pandey / Dr. Amit Gupta ",
-  },
-  {
-    time: "02:00 PM - 02:30 PM",
-    topic: "Implications of somatic panel testiong and IO in gastric cancer",
-    speaker: "Dr. Akash Jha",   
-  },
-  {
-    "time": "02:30 PM - 03:00 PM",
-    "topic": "Role of Radiation Oncology in HPB Cancers",
-    "speaker": "Dr. Mansi Barthwal",
-  },
-  {
-    "time": "03:00 PM - 04:00 PM",
-    "topic": "Panel Discussion – Locally Advanced Rectal Cancer",
-    "speaker": " Dr. Atul Sharma, Dr. Anita Malik (RO), Dr. Aman Chaudhary (MO), Dr. Lalit Mohan (RO), Dr. Kapil Goyal (MO), Dr. Chetan R (MO), Dr. Saurav Nandi (SO)",
-  },
-  {
-    "time": "04:00 PM - 05:00 PM",
-    "topic": "Session 4: Gyne Oncology / Genitourinary",
-    "speaker": "Dr. Sameer Verma / Dr. Deepa Joseph"
-  },
-  {
-    "time": "04:00 PM - 04:30 PM",
-    "topic": "Perioperative Management of Urothelial Cancer",
-    "speaker": "Dr. Deepak Sundariyal"
-  },
-  {
-    "time": "04:30 PM - 05:00 PM",
-    "topic": "Precision Therapeutics in Endometrial Cancer",
-    "speaker": "Dr. Raja Pramanik"
-  },
-  {
-    "time": "05:00 PM - 05:15 PM",
-    "topic": "Tea Break",
-    "speaker": ""
-  },
-  {
-    "time": "05:15 PM - 06:00 PM",
-    "topic": "Panel Discussion – Locally Advanced Carcinoma Cervix (Interlace Trial)",
-    "speaker": "Dr. Sachin Khurana, Dr. Nilanchali Singh (GO), Dr. Shashank Joshi (RO), Dr. Mansi Barthwal (RO), Dr. Kaushal Kalra (MO), Dr. Anshul Gupta (MO)"
-  },
-  {
-    "time": "06:00 PM - 07:30 PM",
-    "topic": "Session 5: Haematology",
-    "speaker": "Dr. Sameer Bakhshi / Dr. Ritu Rakholia"
-  },
-  {
-    "time": "06:30 PM - 07:30 PM",
-    "topic": "Panel Discussion – CML",
-    "speaker": "Dr. Ranjit Sahoo, Dr. Kaushal Kalra (MO), Dr. Sravan Dubasi (MO), Dr. Rohit Reddy (MO), Dr. Avriti Baveja (MO)"
-  },
-  {
-    "time": "07:30 PM",
-    "topic": "Closing Remarks Followed by Dinner",
-    "speaker": ""
-  }
+ 
+  
+      {
+        "time": "12:00 PM - 12:30 PM",
+        "topic": "Registration",
+        "speaker": ""
+      },
+      {
+        "time": "12:30 PM - 1:25 PM",
+        "topic": "Lunch",
+        "speaker": ""
+      },
+      {
+        "time": "1:25 PM",
+        "topic": "Welcome and opening remarks",
+        "speaker": ""
+      },
+      {
+        "time": "1:30 PM - 2:45 PM",
+        "topic": "Session 1: Breast cancer",
+        "speaker": "Dr S P Kataria / Dr Vipul Nautiyal"
+      },
+      {
+        "time": "1:30 PM - 1:45 PM",
+        "topic": "Her2-low and ultra-low HR breast cancer",
+        "speaker": "Dr Abhishek Raj"
+      },
+      {
+        "time": "1:45 PM - 2:00 PM",
+        "topic": "IO in early TNBC – whom and when to offer? (Keynote-522 vs A-Brave)",
+        "speaker": "Dr Mukesh Patekar"
+      },
+      {
+        "time": "2:00 PM - 2:15 PM",
+        "topic": "Case-based discussion on chemoport insertion (Session sponsored by BD)",
+        "speaker": "Dr Ritu Thakur"
+      },
+      {
+        "time": "2:15 PM - 2:45 PM",
+        "topic": "Panel discussion – locally advanced breast cancer",
+        "speaker": "Dr Atul Batra, Dr Viney Kumar (RO), Dr Nalin Goyal (RO), Dr Ritu Thakur (SO), Dr Kapil Goyal (MO), Dr Deepak Sundarjiyal (MO)"
+      },
+      {
+        "time": "2:45 PM - 4:30 PM",
+        "topic": "Session 2: Lung cancer",
+        "speaker": "Dr Kaushal Kalra / Dr Sweety Gupta"
+      },
+      {
+        "time": "2:45 PM - 3:00 PM",
+        "topic": "Exon 20 mutation: Hidden threat in EGFR-NSCLC (Session sponsored by Johnson & Johnson)",
+        "speaker": "Dr Ankit Batra"
+      },
+      {
+        "time": "3:00 PM - 3:15 PM",
+        "topic": "Perioperative IO in NSCLC",
+        "speaker": "Dr Amit Sehrawat"
+      },
+      {
+        "time": "3:15 PM - 3:30 PM",
+        "topic": "Optimal treatment in advanced EGFRm NSCLC (Session sponsored by Astrazeneca)",
+        "speaker": "Dr Shalabh Arora"
+      },
+      {
+        "time": "3:30 PM - 4:00 PM",
+        "topic": "Panel discussion – Stage III NSCLC",
+        "speaker": "Dr Prabhat Malik, Dr Lalit Mohan (RO), Dr Jalaj Gaur (RO), Dr Rakesh Sharma (MO), Dr Nithin S G (MO), Dr Ritu Thakur (SO)"
+      },
+      {
+        "time": "4:00 PM - 4:30 PM",
+        "topic": "Tea Break",
+        "speaker": ""
+      },
+      {
+        "time": "4:30 PM - 5:45 PM",
+        "topic": "Session 3: Gastrointestinal oncology",
+        "speaker": "Dr Praveen Garg / Dr K C Pandey / Dr Amit Gupta"
+      },
+      {
+        "time": "4:30 PM - 4:45 PM",
+        "topic": "Implications of somatic panel testing and IO in gastric cancer",
+        "speaker": "Dr Akash Jha"
+      },
+      {
+        "time": "4:45 PM - 5:00 PM",
+        "topic": "Role of radiation oncology in HPB cancers",
+        "speaker": "Dr Mansi Barthwal"
+      },
+      {
+        "time": "5:00 PM - 5:15 PM",
+        "topic": "Sponsored session",
+        "speaker": "TBD"
+      },
+      {
+        "time": "5:15 PM - 5:45 PM",
+        "topic": "Panel discussion: Managing unresectable HCC – Can we take the bull by the horns? (Session sponsored by Roche)",
+        "speaker": "Moderator: Dr Abhishek Sharma, Dr Atul Sharma (MO), Dr Anita Malik (RO), Dr Rachit Ahuja (RO), Dr Amit Sehrawat (MO), Dr Kapil Goyal (MO), Dr Chethan R (MO), Dr Ankit Batra (MO)"
+      },
+      {
+        "time": "5:45 PM - 7:15 PM",
+        "topic": "Session 4: Gyne Oncology / Genitourinary",
+        "speaker": "Dr Sameer Verma / Dr Deepa Joseph"
+      },
+      {
+        "time": "5:45 PM - 6:00 PM",
+        "topic": "Perioperative management of urothelial cancer",
+        "speaker": "Dr Deepak Sundarjiyal"
+      },
+      {
+        "time": "6:00 PM - 6:30 PM",
+        "topic": "Recent advances in bladder cancer (Session sponsored by Merck)",
+        "speaker": "Dr Ankit Batra"
+      },
+      {
+        "time": "6:30 PM - 6:45 PM",
+        "topic": "Precision therapeutics in endometrial cancer",
+        "speaker": "Dr Raja Pramanik"
+      },
+      {
+        "time": "6:45 PM - 7:15 PM",
+        "topic": "Panel discussion",
+        "speaker": "Dr Sachin Khurana, Dr Nilanchali Singh (GO), Dr Shashank Joshi (RO), Dr Mansi Barthwal (RO), Dr Kaushal Kalra (MO), Dr Anshul Gupta (MO)"
+      },
+      {
+        "time": "7:15 PM - 8:00 PM",
+        "topic": "Session 5: Haematology",
+        "speaker": "Dr Sameer Bakhshi / Dr Akash Jha"
+      },
+      {
+        "time": "7:15 PM - 7:30 PM",
+        "topic": "How I treat high risk AML in 2025",
+        "speaker": "Dr Avriti Baveja"
+      },
+      {
+        "time": "7:30 PM - 8:00 PM",
+        "topic": "Panel discussion",
+        "speaker": "Dr Ranjit Sahoo, Dr Kaushal Kalra (MO), Dr Sravan Dubasi (MO), Dr Rohit Reddy (MO), Dr Avriti Baveja (MO), Dr Aman Chaudhary (MO)"
+      },
+      {
+        "time": "8:00 PM",
+        "topic": "Closing remarks followed by dinner",
+        "speaker": ""
+      }
   
 ];
 
@@ -135,8 +166,8 @@ const Program = () => {
     console.log("Download button clicked");  // Debugging
   
     const link = document.createElement("a");
-    link.href = "/conference-program.pdf";  // Explicit URL
-    link.download = "conference-program.pdf";
+    link.href = "/Agenda.pdf";  // Explicit URL
+    link.download = "Agenda.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -200,43 +231,44 @@ const Program = () => {
 
     </motion.div>
 
-      <div className="rounded-2xl border bg-white shadow-lg overflow-hidden">
-        <Table>
-          <TableHeader>
-            <TableRow className="bg-primary/5 hover:bg-primary/5">
-              <TableHead className="w-[200px] text-primary font-semibold">Time</TableHead>
-              <TableHead className="min-w-[300px] text-primary font-semibold">Topic</TableHead>
-              <TableHead className="text-primary font-semibold">Speaker</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {programSchedule.map((session, index) => (
-              <TableRow 
-                key={index}
-                className={`transition-colors ${
-                  isSessionHeader(session.topic)
-                    ? "bg-gradient-to-r from-[#9b87f5]/10 to-transparent hover:from-[#9b87f5]/20"
-                    : "hover:bg-secondary-light/50"
-                }`}
-              >
-                <TableCell className="font-medium text-primary-dark">
-                  {session.time}
-                </TableCell>
-                <TableCell className={`font-medium ${
-                  isSessionHeader(session.topic) 
-                    ? "text-[#8B5CF6]" 
-                    : ""
-                }`}>
-                  {session.topic}
-                </TableCell>
-                <TableCell className="text-secondary-dark">
-                  {session.speaker}
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </div>
+    <div className="rounded-2xl border bg-white shadow-lg overflow-hidden">
+  <Table>
+    <TableHeader>
+      <TableRow className="bg-primary/5 hover:bg-primary/5">
+        <TableHead className="w-[200px] text-primary font-semibold text-center">Time</TableHead>
+        <TableHead className="min-w-[300px] text-primary font-semibold text-center">Topic</TableHead>
+        <TableHead className="text-primary font-semibold text-center">Speaker</TableHead>
+      </TableRow>
+    </TableHeader>
+    <TableBody>
+      {programSchedule.map((session, index) => (
+        <TableRow 
+          key={index}
+          className={`transition-colors ${
+            isSessionHeader(session.topic)
+              ? "bg-gradient-to-r from-[#9b87f5]/10 to-transparent hover:from-[#9b87f5]/20"
+              : "hover:bg-secondary-light/50"
+          }`}
+        >
+          <TableCell className="font-medium text-primary-dark text-center">
+            {session.time}
+          </TableCell>
+          <TableCell className={`font-medium text-center ${
+            isSessionHeader(session.topic) 
+              ? "text-[#8B5CF6]" 
+              : ""
+          }`}>
+            {session.topic}
+          </TableCell>
+          <TableCell className="text-secondary-dark text-center">
+            {session.speaker}
+          </TableCell>
+        </TableRow>
+      ))}
+    </TableBody>
+  </Table>
+</div>
+
     </div>
   );
 };
