@@ -212,6 +212,7 @@ const Index = () => {
 </div>
 
 
+
           <div className="flex flex-col md:flex-row items-center md:justify-between relative md:top-[-20px] space-y-4 md:space-y-0">
   <div className="flex-1 text-center md:text-left">
     <p className="text-gray-900 font-medium text-lg">Dr. Shalabh Arora</p>

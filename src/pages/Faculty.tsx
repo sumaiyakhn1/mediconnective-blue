@@ -49,8 +49,8 @@ const Faculty = () => {
     },
     {
       name: "Dr Parveen Garg ",
-      role: "Professor",
-      photo: "/doc-img/doc33.jpg",
+      role: "Consultant",
+      photo: "/doc-img/doc33.jpeg",
       credentials: "Surgical oncology ",
       specialization: "Indraprastha Apollo hospital New Delhi",
     },
