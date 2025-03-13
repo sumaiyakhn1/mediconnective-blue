@@ -44,23 +44,7 @@ const Index = () => {
   }, [images.length]);
 
   // Countdown timer
-  useEffect(() => {
-    const calculateTimeLeft = () => {
-      const difference = new Date("2025-03-08").getTime() - new Date().getTime();
-      if (difference > 0) {
-        setTimeLeft({
-          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-          minutes: Math.floor((difference / 1000 / 60) % 60),
-          seconds: Math.floor((difference / 1000) % 60),
-        });
-      }
-    };
 
-    const timer = setInterval(calculateTimeLeft, 1000);
-    calculateTimeLeft();
-    return () => clearInterval(timer);
-  }, []);
 
   return (
     <div className="animate-fade-in">
@@ -127,40 +111,7 @@ const Index = () => {
 </div>
 
 
-      <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      viewport={{ once: true }}
-      className="py-8 bg-gradient-to-r from-primary/5 to-primary/10"
-    >
-      <div className="max-w-5xl mx-auto px-4">
-        <h2 className="text-2xl font-bold text-primary text-center mb-6">
-          Time Until The Conference
-        </h2>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          viewport={{ once: true }}
-          className="flex flex-wrap justify-center gap-4"
-        >
-          {Object.entries(timeLeft).map(([unit, value]) => (
-            <motion.div
-              key={unit}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 * Object.keys(timeLeft).indexOf(unit) }}
-              viewport={{ once: true }}
-              className="bg-white/50 backdrop-blur px-6 py-3 rounded-lg shadow-sm flex items-center gap-2"
-            >
-              <span className="text-2xl font-bold text-primary">{value}</span>
-              <span className="text-sm text-gray-600 capitalize">{unit}</span>
-            </motion.div>
-          ))}
-        </motion.div>
-      </div>
-    </motion.div>
+     
 
       {/* Conference Invitation */}
       <div className="flex justify-center bg-gray-100 min-h-screen px-4">
