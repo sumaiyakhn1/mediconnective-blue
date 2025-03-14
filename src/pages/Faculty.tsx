@@ -47,13 +47,13 @@ const Faculty = () => {
       credentials: "Radiation Oncologist",
       specialization: "AIIMS, Rishikesh",
     },
-    {
-      name: "Dr Parveen Garg ",
-      role: "Consultant",
-      photo: "/doc-img/doc33.jpeg",
-      credentials: "Surgical oncology ",
-      specialization: "Indraprastha Apollo hospital New Delhi",
-    },
+    // {
+    //   name: "Dr Parveen Garg ",
+    //   role: "Consultant",
+    //   photo: "/doc-img/doc33.jpeg",
+    //   credentials: "Surgical oncology ",
+    //   specialization: "Indraprastha Apollo hospital New Delhi",
+    // },
     {
       name: "Dr. Abhishek Raj",
       role: "Senior Consultant",
@@ -61,13 +61,13 @@ const Faculty = () => {
       credentials: "Medical Oncologist & Haematology",
       specialization: "Sarvodaya Hospital, Faridabad",
     },
-    {
-      name: "Dr. Mukesh Patekar",
-      role: "Unit Head",
-      photo: "/doc-img/doc8.jpg",
-      credentials: "Medical Oncologist",
-      specialization: "Artemis Hospitals, Gurugram",
-    },
+    // {
+    //   name: "Dr. Mukesh Patekar",
+    //   role: "Unit Head",
+    //   photo: "/doc-img/doc8.jpg",
+    //   credentials: "Medical Oncologist",
+    //   specialization: "Artemis Hospitals, Gurugram",
+    // },
     {
       name: "Dr. Viney Kumar",
       role: "Assistant Professor",
@@ -75,13 +75,13 @@ const Faculty = () => {
       credentials: "Radiation Oncologist",
       specialization: "Swami Rama Himalayan University",
     },
-    {
-      name: "Dr. Kapil Goyal",
-      role: "Consultant",
-      photo: "/doc-img/doc9.jpg",
-      credentials: "Medical Oncologist",
-      specialization: "RGCIRC, New Delhi",
-    },
+    // {
+    //   name: "Dr. Kapil Goyal",
+    //   role: "Consultant",
+    //   photo: "/doc-img/doc9.jpg",
+    //   credentials: "Medical Oncologist",
+    //   specialization: "RGCIRC, New Delhi",
+    // },
     {
       name: "Dr Deepak Sundariyal",
       role: "Assistant Professor",
@@ -96,13 +96,13 @@ const Faculty = () => {
       credentials: "Medical Oncologist",
       specialization: "HIMS, Uttarakhand",
     },
-    {
-      name: "Dr Amit Sehrawat",
-      role: "Associate Professor",
-      photo: "/doc-img/doc13.jpg",
-      credentials: "Medical Oncologist ",
-      specialization: "AIIMS, Rishikesh",
-    },
+    // {
+    //   name: "Dr Amit Sehrawat",
+    //   role: "Associate Professor",
+    //   photo: "/doc-img/doc13.jpg",
+    //   credentials: "Medical Oncologist ",
+    //   specialization: "AIIMS, Rishikesh",
+    // },
     {
       name: "Dr Prabhat Malik",
       role: " Assistant Professor",
@@ -201,13 +201,13 @@ const Faculty = () => {
       credentials: "Radiation Oncologist ",
       specialization: "MAMC, New Delhi",
     },
-    {
-      name: "Dr Anshul Gupta",
-      role: "Consultant",
-      photo: "/doc-img/doc28.jpg",
-      credentials: "Medical Oncologist ",
-      specialization: "Max Hospital, Noida",
-    },
+    // {
+    //   name: "Dr Anshul Gupta",
+    //   role: "Consultant",
+    //   photo: "/doc-img/doc28.jpg",
+    //   credentials: "Medical Oncologist ",
+    //   specialization: "Max Hospital, Noida",
+    // },
     {
       name: "Dr Avriti Baveja",
       role: "Consultant",
@@ -228,6 +228,51 @@ const Faculty = () => {
       photo: "/doc-img/doc31.png",
       credentials: "Medical Oncologist",
       specialization: "Yashoda Hospitals,Malakpet",
+    },
+    {
+      name: "Dr Sameer Bakhshi",
+      role: "Consultant",
+      photo: "/doc-img/doc34.jpg",
+      credentials: "Medical Oncologist",
+      specialization: "AIIMS, Delhi",
+    },
+    {
+      name: "Dr Sachin Khurana",
+      role: "Consultant",
+      photo: "/doc-img/doc35.jpg",
+      credentials: "Medical Oncologist",
+      specialization: "AIIMS, Delhi",
+    },
+    {
+      name: "Dr Akash Jha",
+      role: "Consultant",
+      photo: "/doc-img/doc36.jpg",
+      credentials: "Medical Oncologist",
+      specialization: "NCI, Jhajjar",
+    },
+
+    {
+      name: "Dr Ranjit Sahoo",
+      role: "Assistant Professor",
+      photo: "/doc-img/doc37.png",
+      credentials: "Medical Oncologist",
+      specialization: "AIIMS, Delhi",
+    },
+
+    {
+      name: "Dr Sweety Gupta",
+      role: "Additional Professor",
+      photo: "/doc-img/doc38.png",
+      credentials: "Radiation Oncologist",
+      specialization: "AIIMS, Rishikesh",
+    },
+
+    {
+      name: "Dr Nalin Goyal",
+      role: "Senior Resident",
+      photo: "/doc-img/doc39.jpg",
+      credentials: "Radiation Oncologist",
+      specialization: "GMC, Haldwani",
     },
 
 

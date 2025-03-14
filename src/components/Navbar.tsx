@@ -6,7 +6,7 @@ const navItems = [
   { name: "Home", path: "/" },
   { name: "Faculty", path: "/faculty" },
   { name: "Program", path: "/program" },
-  { name: "Registration", path: "/registration" },
+  // { name: "Registration", path: "/registration" },
   { name: "Gallery", path: "/gallery" },
   { name: "Contact Us", path: "/contact" },
 ];

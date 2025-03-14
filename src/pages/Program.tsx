@@ -42,8 +42,8 @@ const programSchedule = [
       },
       {
         "time": "1:45 PM - 2:00 PM",
-        "topic": "IO in early TNBC – whom and when to offer? (Keynote-522 vs A-Brave)",
-        "speaker": "Dr Mukesh Patekar"
+        "topic": "Redifing treatment outcomes with immunotherapy in early triple negative breast cancer (Session sponsored by MSD)",
+        "speaker": "Dr Ankit Batra"
       },
       {
         "time": "2:00 PM - 2:15 PM",
@@ -67,8 +67,8 @@ const programSchedule = [
       },
       {
         "time": "3:00 PM - 3:15 PM",
-        "topic": "Perioperative IO in NSCLC",
-        "speaker": "Dr Amit Sehrawat"
+        "topic": "Non-squamous NSCLC: The way forward - The breakthrough of immmunotherapy (Session sponsored by MSD)",
+        "speaker": "Dr Saurabh Mishra"
       },
       {
         "time": "3:15 PM - 3:30 PM",
@@ -78,7 +78,7 @@ const programSchedule = [
       {
         "time": "3:30 PM - 4:00 PM",
         "topic": "Panel discussion – Stage III NSCLC",
-        "speaker": "Dr Prabhat Malik, Dr Lalit Mohan (RO), Dr Jalaj Gaur (RO), Dr Rakesh Sharma (MO), Dr Nithin S G (MO), Dr Ritu Thakur (SO)"
+        "speaker": "Dr Prabhat Malik, Dr Lalit Mohan (RO), Dr Jalaj Gaur (RO), Dr Rakesh Sharma (MO), Dr Nithin S G (MO), Dr Saurav Nandi (SO)"
       },
       {
         "time": "4:00 PM - 4:30 PM",
@@ -88,7 +88,7 @@ const programSchedule = [
       {
         "time": "4:30 PM - 5:45 PM",
         "topic": "Session 3: Gastrointestinal oncology",
-        "speaker": "Dr Praveen Garg / Dr K C Pandey / Dr Amit Gupta"
+        "speaker": "Dr Praveen Garg / Dr Ranjit Sahoo"
       },
       {
         "time": "4:30 PM - 4:45 PM",
@@ -101,39 +101,39 @@ const programSchedule = [
         "speaker": "Dr Mansi Barthwal"
       },
       {
-        "time": "5:00 PM - 5:15 PM",
-        "topic": "Sponsored session",
-        "speaker": "TBD"
+        "time": "5:00 PM - 5:20 PM",
+        "topic": "Pembrolizumab in the management of MSI-H/D-MMR advanced cancer colorectal cancer - a new theraputic benchmark in immuno-oncolgy (Session sponsored by MSD)",
+        "speaker": "Dr Abhishek Raj"
       },
       {
-        "time": "5:15 PM - 5:45 PM",
+        "time": "5:20 PM - 5:50 PM",
         "topic": "Panel discussion: Managing unresectable HCC – Can we take the bull by the horns? (Session sponsored by Roche)",
-        "speaker": "Moderator: Dr Abhishek Sharma, Dr Atul Sharma (MO), Dr Anita Malik (RO), Dr Rachit Ahuja (RO), Dr Amit Sehrawat (MO), Dr Kapil Goyal (MO), Dr Chethan R (MO), Dr Ankit Batra (MO)"
+        "speaker": "Dr Atul Sharma (MO), Dr Abhishek Sharma,  Dr Ankit Batra (MO), Dr Rachit Ahuja (RO), Dr Shalabh Arora (MO),"
       },
       {
-        "time": "5:45 PM - 7:15 PM",
+        "time": "5:50 PM - 7:15 PM",
         "topic": "Session 4: Gyne Oncology / Genitourinary",
         "speaker": "Dr Sameer Verma / Dr Deepa Joseph"
       },
       {
-        "time": "5:45 PM - 6:00 PM",
+        "time": "5:50 PM - 6:05 PM",
         "topic": "Perioperative management of urothelial cancer",
         "speaker": "Dr Deepak Sundarjiyal"
       },
       {
-        "time": "6:00 PM - 6:30 PM",
+        "time": "6:05 PM - 6:35 PM",
         "topic": "Recent advances in bladder cancer (Session sponsored by Merck)",
         "speaker": "Dr Ankit Batra"
       },
       {
-        "time": "6:30 PM - 6:45 PM",
+        "time": "6:35 PM - 6:50 PM",
         "topic": "Precision therapeutics in endometrial cancer",
         "speaker": "Dr Raja Pramanik"
       },
       {
-        "time": "6:45 PM - 7:15 PM",
+        "time": "6:50 PM - 7:15 PM",
         "topic": "Panel discussion",
-        "speaker": "Dr Sachin Khurana, Dr Nilanchali Singh (GO), Dr Shashank Joshi (RO), Dr Mansi Barthwal (RO), Dr Kaushal Kalra (MO), Dr Anshul Gupta (MO)"
+        "speaker": "Dr Sachin Khurana, Dr Nilanchali Singh (GO), Dr Shashank Joshi (RO), Dr Anita Malik (RO), Dr Kaushal Kalra (MO), Dr Chetan R (MO)"
       },
       {
         "time": "7:15 PM - 8:00 PM",

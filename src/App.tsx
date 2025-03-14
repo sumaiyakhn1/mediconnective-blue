@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import Index from "./pages/Index";
 import Faculty from "./pages/Faculty";
 import Program from "./pages/Program";
-import Registration from "./pages/Registration";
+// import Registration from "./pages/Registration";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -18,7 +18,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/faculty" element={<Faculty />} />
           <Route path="/program" element={<Program />} />
-          <Route path="/registration" element={<Registration />} />
+          {/* <Route path="/registration" element={<Registration />} /> */}
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
