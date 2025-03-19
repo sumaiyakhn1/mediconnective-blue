@@ -184,25 +184,26 @@ const Index = () => {
     <div>
       <PartnersCarousel />
     </div>
+    <div>
     <motion.div 
-      className="w-screen h-screen flex justify-center items-center bg-black"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-    >
-      <motion.video
-        className="w-full h-full object-cover"
-        autoPlay
-        loop
-        muted
-        controls
-        whileHover={{ scale: 1.02 }}
-        transition={{ duration: 0.3 }}
-      >
-        <source src="/KUMAON CANCER CONCLAVE 2025 (1).mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </motion.video>
-    </motion.div>
+  className="relative w-full h-screen overflow-hidden"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 1 }}
+>
+  <motion.video
+    className="w-full h-full object-cover"
+    autoPlay
+    loop
+    muted
+    controls
+  >
+    <source src="/KUMAON CANCER CONCLAVE 2025 (1).mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </motion.video>
+</motion.div>
+
+    </div>
   </div>
   );
 };

@@ -22,6 +22,17 @@ const images = [
   { src: "gallery-img/g19.JPG", caption: "" },
   { src: "gallery-img/g20.JPG", caption: "" },
   { src: "gallery-img/g21.JPG", caption: "" },
+  { src: "gallery-img/g22.jpg", caption: "" },
+  { src: "gallery-img/g23.jpg", caption: "" },
+  { src: "gallery-img/g24.jpg", caption: "" },
+  { src: "gallery-img/g25.jpg", caption: "" },
+  { src: "gallery-img/g26.jpg", caption: "" },
+  { src: "gallery-img/g27.jpg", caption: "" },
+  { src: "gallery-img/g28.jpg", caption: "" },
+  { src: "gallery-img/g29.jpg", caption: "" },
+  { src: "gallery-img/g30.jpg", caption: "" },
+  
+
  
 ];
 
