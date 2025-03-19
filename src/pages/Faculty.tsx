@@ -115,8 +115,8 @@ const Faculty = () => {
       name: "Dr Sunil Saini",
       role: "Senior Consultant",
       photo: "/doc-img/doc40.jpg",
-      credentials: "Ortheopadic Surgeon",
-      specialization: "Global Hospital & Trauma Centre, Pataudi",
+      credentials: "Surgical Oncologist",
+      specialization: "HIMS, SRHU Dehradun",
     },
     {
       name: "Dr Bhawna Grag",
