@@ -253,7 +253,7 @@ const Program = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.4 }}
       >
-        Join us for an enlightening series of presentations and discussions led by renowned experts in the field of oncology, taking place at <strong>Hotel Manu Maharani, Ramnagar Nainital</strong> on <strong>March 8.</strong>
+A comprehensive series of presentations and discussions on oncology were successfully conducted at <strong>Hotel Manu Maharani, Ramnagar Nainital</strong> on <strong>March 8</strong>, featuring insights from renowned experts in the field.
       </motion.p>
 
       
