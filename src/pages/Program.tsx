@@ -28,7 +28,7 @@ const programSchedule = [
       {
         "time": "1:25 PM",
         "topic": "Welcome and opening remarks",
-        "speaker": ""
+        "speaker": "Dr Shalabh Arora"
       },
       {
         "time": "1:30 PM - 2:45 PM",
@@ -53,12 +53,12 @@ const programSchedule = [
       {
         "time": "2:15 PM - 2:45 PM",
         "topic": "Panel discussion – locally advanced breast cancer",
-        "speaker": "Dr Atul Batra, Dr Viney Kumar (RO), Dr Nalin Goyal (RO), Dr Ritu Thakur (SO), Dr Kapil Goyal (MO), Dr Deepak Sundarjiyal (MO)"
+        "speaker": "Dr Atul Batra, Dr Viney Kumar (RO), Dr Nalin Goyal (RO), Dr Ritu Thakur (SO), Dr Kapil Goyal (MO), Dr Deepak Sundarjiyal (MO),"
       },
       {
         "time": "2:45 PM - 4:30 PM",
         "topic": "Session 2: Lung cancer",
-        "speaker": "Dr Kaushal Kalra"
+        "speaker": "Dr Kaushal Kalra / Dr Bhawna Garg"
       },
       {
         "time": "2:45 PM - 3:00 PM",
@@ -108,12 +108,12 @@ const programSchedule = [
       {
         "time": "5:20 PM - 5:50 PM",
         "topic": "Panel discussion: Managing unresectable HCC – Can we take the bull by the horns? (Session sponsored by Roche)",
-        "speaker": "Dr Atul Sharma (MO), Dr Abhishek Sharma,  Dr Ankit Batra (MO), Dr Rachit Ahuja (RO), Dr Shalabh Arora (MO),"
+        "speaker": "Dr Atul Sharma (MO), Dr Abhishek Sharma, Dr Ankit Batra (MO), Dr Rachit Ahuja (RO), Dr Shalabh Arora (MO),"
       },
       {
         "time": "5:50 PM - 7:15 PM",
         "topic": "Session 4: Gyne Oncology / Genitourinary",
-        "speaker": "Dr Sameer Bakshi / Dr Deepa Joseph"
+        "speaker": "Dr S K Verma / Dr Sunil Saini"
       },
       {
         "time": "5:50 PM - 6:05 PM",
@@ -153,7 +153,7 @@ const programSchedule = [
       {
         "time": "8:00 PM",
         "topic": "Closing remarks followed by dinner",
-        "speaker": ""
+        "speaker": "Dr Shalabh Arora"
       }
   
 ];
