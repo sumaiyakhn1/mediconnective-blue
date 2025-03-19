@@ -78,7 +78,7 @@ const programSchedule = [
       {
         "time": "3:30 PM - 4:00 PM",
         "topic": "Panel discussion – Stage III NSCLC",
-        "speaker": "Dr Prabhat Malik, Dr Lalit Mohan (RO), Dr Jalaj Gaur (RO), Dr Rakesh Sharma (MO), Dr Nithin S G (MO), Dr Saurav Nandi (SO)"
+        "speaker": "Dr Prabhat Malik, Dr Lalit Mohan (RO), Dr Jalaj Gaur (RO), Dr Nithin S G (MO), Dr Saurav Nandi (SO)"
       },
       {
         "time": "4:00 PM - 4:30 PM",
