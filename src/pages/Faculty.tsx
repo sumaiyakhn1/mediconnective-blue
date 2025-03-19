@@ -143,8 +143,8 @@ const Faculty = () => {
       name: "Dr Saurabh Mishra",
       role: "Senior Consultant",
       photo: "/doc-img/doc41.jpg",
-      credentials: "Urology and Andrology",
-      specialization: "Moolchand, New Delhi",
+      credentials: " Medical Oncologist",
+      specialization: "Gurgaon Sector 38, Gurgaon",
     },
     {
       name: "Dr Rachit Ahuja",
