@@ -58,7 +58,7 @@ const programSchedule = [
       {
         "time": "2:45 PM - 4:30 PM",
         "topic": "Session 2: Lung cancer",
-        "speaker": "Dr Kaushal Kalra / Dr Sweety Gupta"
+        "speaker": "Dr Kaushal Kalra"
       },
       {
         "time": "2:45 PM - 3:00 PM",
@@ -113,7 +113,7 @@ const programSchedule = [
       {
         "time": "5:50 PM - 7:15 PM",
         "topic": "Session 4: Gyne Oncology / Genitourinary",
-        "speaker": "Dr Sameer Verma / Dr Deepa Joseph"
+        "speaker": "Dr Sameer Bakshi / Dr Deepa Joseph"
       },
       {
         "time": "5:50 PM - 6:05 PM",
