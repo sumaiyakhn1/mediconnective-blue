@@ -16,7 +16,9 @@ const programSchedule = [
   {
     "time": "12:00 – 12:30 PM",
     "topic": "Registration",
-    "speaker": ""
+    "speaker": {
+      "name": [""]
+    }
   },
   {
     "time": "12:30 – 1:25 PM",
@@ -253,8 +255,7 @@ const Program = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.4 }}
       >
-A comprehensive series of presentations and discussions on oncology were successfully conducted at <strong>Hotel Manu Maharani, Ramnagar Nainital</strong> on <strong>March 8</strong>, featuring insights from renowned experts in the field.
-      </motion.p>
+Review the <strong>extensive</strong> lineup of <strong>sessions </strong>covering various critical <strong>topics </strong>at the <strong>conference</strong>, held at <strong>Hotel Manu Maharani, Ramnagar Nainital</strong> on <strong>March 8.  </strong>    </motion.p>
 
       
       <motion.div

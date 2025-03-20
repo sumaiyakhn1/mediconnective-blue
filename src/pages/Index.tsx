@@ -123,39 +123,20 @@ const Index = () => {
            
           </p>
           
-          <p className="text-gray-700">
-            With immense pleasure, we would like to invite you for the Conference – 
-            <span className="font-semibold"> “KUMAON CANCER CONCLAVE 2025” </span> 
-            (Cutting Edge to Real World) to be held on 
-            <span className="font-semibold"> Saturday, 8th March 2025 </span> 
-            at Hotel Manu Maharani, Ramnagar Nainital.
-          </p>
-
-        
-
-          <p className="text-gray-700 mt-2">
-            The Conference will be organized under the aegis of 
-            <span className="font-semibold"> "ONCO IMAGING AND THERAPEUTICS INDIA". </span>
-           The conference will focus on translating the latest advancements in oncology into real-world clinical applications. It will feature insightful discussions, expert-led sessions, and interactive workshops, making it a valuable learning opportunity for students, researchers, and academicians alike.
-          </p>
-
-          <p className="text-gray-600 italic mt-2">
-          Our goal is to foster 
-          <span className="font-semibold"> collaboration, innovation, and impactful change in cancer care, equipping participants with enhanced knowledge and tools to improve patient outcomes.</span>
-          </p>
-
-          <p className="text-gray-700 mt-2">
-          Nestled in the picturesque Kumaon region, Ramnagar, Nainital, offers a perfect blend of scientific engagement and natural tranquility. Known for its serene landscapes, rich biodiversity, and historical significance, the location provides an inspiring environment to learn, collaborate, and reflect.
-          </p>
-
-          <p className="text-gray-700 mt-2">
-          This joint collaborative conference offers industry leaders a platform to showcase innovations, connect with experts, and shape the future of cancer treatment.  <span className="font-semibold">Ujala Cygnus Hospital ,</span>joins as our  <span className="font-semibold"> Academic Partner </span> with  <span className="font-semibold"> AMD Global Net Pvt. Ltd. </span> as the official event coordinator for a seamless experience.
-           
-          </p>
-
-          <p className="text-gray-700 mt-2">
-          We look forward to your valuable support and participation in making this conference a resounding success. For further details, please feel free to reach out.
-          </p>
+          
+      <p>
+        On behalf of the organizing team, we extend our heartfelt gratitude for your invaluable support and participation in the conference under the aegis of <strong>"ONCO IMAGING AND THERAPEUTICS INDIA."</strong> Your enthusiasm and contributions helped make this event a resounding success.
+      </p>
+      <p className="mt-4">
+        Your presence added immense value to our discussions, expert-led sessions, and interactive workshops, fostering collaboration, innovation, and meaningful change in cancer care. We truly appreciate your engagement in translating the latest advancements in oncology into real-world clinical applications.
+      </p>
+      <p className="mt-4">
+        Set against the serene backdrop of <strong>Ramnagar, Nainital,</strong> this conference would not have been as impactful without your involvement. We are especially grateful to <strong>Ujala Cygnus Hospital</strong> for joining as our Academic Partner and <strong>AMD Global Net Pvt. Ltd.</strong> for their seamless event coordination.
+      </p>
+      <p className="mt-4">
+        Thank you for being a part of this journey toward <strong>shaping the future of cancer treatment.</strong> We look forward to staying connected and working together in future endeavors.
+      </p>
+    
 
           <div className="mt-4 text-center md:text-left">
   <p className="text-gray-700 font-medium">Thank You!</p>
