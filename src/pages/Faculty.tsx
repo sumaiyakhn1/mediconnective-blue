@@ -306,7 +306,7 @@ const Faculty = () => {
     {
       name: "Dr Chethan R",
       role: "Specialist",
-      photo: "",
+      photo: "doc-img/doc45.jpg",
       credentials: "Medical Oncologist",
       specialization: "KMIO, Bangalore",
     },
