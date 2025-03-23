@@ -125,7 +125,7 @@ const Index = () => {
           
           
       <p>
-        On behalf of the organizing team, we extend our heartfelt gratitude for your invaluable support and participation in the conference under the aegis of <strong>"ONCO IMAGING AND THERAPEUTICS INDIA."</strong> Your enthusiasm and contributions helped make this event a resounding success.
+        On behalf of the organizing team, we extend our heartfelt gratitude for your invaluable support and participation in the conference <strong>"Kumaon Cancer Conclave 2025."</strong> Your enthusiasm and contributions helped make this event a resounding success.
       </p>
       <p className="mt-4">
         Your presence added immense value to our discussions, expert-led sessions, and interactive workshops, fostering collaboration, innovation, and meaningful change in cancer care. We truly appreciate your engagement in translating the latest advancements in oncology into real-world clinical applications.
