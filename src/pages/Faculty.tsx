@@ -287,7 +287,7 @@ const Faculty = () => {
       role: "Director",
       photo: "/doc-img/doc34.jpg",
       credentials: "Medical Oncologist",
-      specialization: "AIIMS, Delhi",
+      specialization: "IRCS, Delhi",
     },
     {
       name: "Dr Sachin Khurana",
