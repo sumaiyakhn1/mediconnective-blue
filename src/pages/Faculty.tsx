@@ -39,13 +39,13 @@ const Faculty = () => {
       credentials: "Medical Oncologist",
       specialization: "VMMC, New Delhi",
     },
-    {
-      name: "Dr Atul Sharma ",
-      role: "Vice Chairman",
-      photo: "/doc-img/doc5.jpg",
-      credentials: "Medical Oncologist",
-      specialization: "Max Healthcare",
-    },
+    // {
+    //   name: "Dr Atul Sharma ",
+    //   role: "Vice Chairman",
+    //   photo: "/doc-img/doc5.jpg",
+    //   credentials: "Medical Oncologist",
+    //   specialization: "Max Healthcare",
+    // },
    
     {
       name: "Dr. Deepa Joseph",
